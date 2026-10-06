@@ -1,0 +1,49 @@
+{
+  "model": "GraphWaveNet",
+  "seed": 3,
+  "phase": "final",
+  "settings": {
+    "max_epochs": 100,
+    "patience": 15,
+    "batch_size": 8,
+    "threads": 4,
+    "history": 12,
+    "horizon": 12,
+    "weight_decay": 0.0001,
+    "hidden": 32,
+    "lr": 0.0003
+  },
+  "validation_mae": 2.8742717860226974,
+  "epochs": 66,
+  "best_epoch": 51,
+  "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+  "stopped_by": "early_stopping",
+  "test_evaluated": true,
+  "physics_calibrated": false,
+  "test": {
+    "15": {
+      "count": 1242568,
+      "MAE": 2.720918194315708,
+      "RMSE": 5.211389294274225,
+      "MAPE_percent": 7.133969443478935
+    },
+    "30": {
+      "count": 1242550,
+      "MAE": 3.1099132447890616,
+      "RMSE": 6.262432497820012,
+      "MAPE_percent": 8.64010105823773
+    },
+    "60": {
+      "count": 1242514,
+      "MAE": 3.540402454973035,
+      "RMSE": 7.339361645950714,
+      "MAPE_percent": 10.274410460915112
+    }
+  },
+  "test_all_horizons": {
+    "count": 14910564,
+    "MAE": 3.065095982603082,
+    "RMSE": 6.205119370824491,
+    "MAPE_percent": 8.479746603632574
+  }
+}

@@ -218,3 +218,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Large data and generated training artifacts remain in the local research archive
+/02_dataset/*.zip
+/04_results/**/*.npz
+/04_results/**/*.pt
+/04_results/**/*.zip
+/04_results/q_cache/
+/formal_v3/**/__pycache__/
+/formal_v3/**/*.pyc

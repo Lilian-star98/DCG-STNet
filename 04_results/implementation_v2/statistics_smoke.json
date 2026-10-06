@@ -1,0 +1,293 @@
+{
+  "evidence": "synthetic_one_epoch_pipeline_check_only",
+  "comparisons": [
+    {
+      "dataset": "synthetic",
+      "target": "speed",
+      "horizon_minutes": 15,
+      "split_id": "4d1dacc89dbc39545f03b2e23a6b3481fe0ddabe3e146727ec231149afcf832a",
+      "reference": "CaST",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "mean_delta_ours_minus_reference": 0.5978097915649414,
+      "p_two_sided": 0.212452517160307,
+      "models": {
+        "STCausalNet": {
+          "mean": 5.465785217285156,
+          "sample_std": 0.5728885994369057
+        },
+        "HA": {
+          "mean": 4.942642688751221,
+          "sample_std": 0.0
+        },
+        "GraphWaveNet": {
+          "mean": 4.928785419464111,
+          "sample_std": 0.8878727030195279
+        },
+        "D2STGNN": {
+          "mean": 5.592569732666016,
+          "sample_std": 1.3089854129280836
+        },
+        "CaST": {
+          "mean": 4.867975425720215,
+          "sample_std": 0.3930480378918298
+        },
+        "PDFormer": {
+          "mean": 5.635794734954834,
+          "sample_std": 1.2748235697288128
+        },
+        "STAEformer": {
+          "mean": 5.2138103485107425,
+          "sample_std": 1.1573166836019326
+        }
+      },
+      "q_BH": 0.424905034320614,
+      "significant_at_0_05": false
+    },
+    {
+      "dataset": "synthetic",
+      "target": "flow",
+      "horizon_minutes": 15,
+      "split_id": "4d1dacc89dbc39545f03b2e23a6b3481fe0ddabe3e146727ec231149afcf832a",
+      "reference": "GraphWaveNet",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "mean_delta_ours_minus_reference": 23.22379150390625,
+      "p_two_sided": 0.7038960966035466,
+      "models": {
+        "STCausalNet": {
+          "mean": 651.0103149414062,
+          "sample_std": 100.64579927928018
+        },
+        "HA": {
+          "mean": 635.078369140625,
+          "sample_std": 0.0
+        },
+        "GraphWaveNet": {
+          "mean": 627.7865234375,
+          "sample_std": 36.32115904241922
+        },
+        "D2STGNN": {
+          "mean": 650.4515991210938,
+          "sample_std": 59.19646901558426
+        },
+        "CaST": {
+          "mean": 662.5508911132813,
+          "sample_std": 69.49857503418642
+        },
+        "PDFormer": {
+          "mean": 614.0967529296875,
+          "sample_std": 110.93126384937192
+        },
+        "STAEformer": {
+          "mean": 729.5071533203125,
+          "sample_std": 94.49603150980366
+        }
+      },
+      "q_BH": 0.7038960966035465,
+      "significant_at_0_05": false
+    },
+    {
+      "dataset": "synthetic",
+      "target": "speed",
+      "horizon_minutes": 30,
+      "split_id": "4d1dacc89dbc39545f03b2e23a6b3481fe0ddabe3e146727ec231149afcf832a",
+      "reference": "HA",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "mean_delta_ours_minus_reference": 0.21147394180297852,
+      "p_two_sided": 0.40206459756899815,
+      "models": {
+        "STCausalNet": {
+          "mean": 5.154064655303955,
+          "sample_std": 0.5049677171016417
+        },
+        "HA": {
+          "mean": 4.942590713500977,
+          "sample_std": 0.0
+        },
+        "GraphWaveNet": {
+          "mean": 6.121443176269532,
+          "sample_std": 1.2344395150073344
+        },
+        "D2STGNN": {
+          "mean": 6.401866436004639,
+          "sample_std": 1.5121337816792715
+        },
+        "CaST": {
+          "mean": 5.797879886627197,
+          "sample_std": 1.0362756038286989
+        },
+        "PDFormer": {
+          "mean": 5.757613039016723,
+          "sample_std": 1.6138725332287938
+        },
+        "STAEformer": {
+          "mean": 6.448889923095703,
+          "sample_std": 2.314861121183002
+        }
+      },
+      "q_BH": 0.5546093210522797,
+      "significant_at_0_05": false
+    },
+    {
+      "dataset": "synthetic",
+      "target": "flow",
+      "horizon_minutes": 30,
+      "split_id": "4d1dacc89dbc39545f03b2e23a6b3481fe0ddabe3e146727ec231149afcf832a",
+      "reference": "GraphWaveNet",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "mean_delta_ours_minus_reference": 69.08466796875,
+      "p_two_sided": 0.09480369792770088,
+      "models": {
+        "STCausalNet": {
+          "mean": 643.5040771484375,
+          "sample_std": 92.33761272631675
+        },
+        "HA": {
+          "mean": 635.4573974609375,
+          "sample_std": 0.0
+        },
+        "GraphWaveNet": {
+          "mean": 574.4194091796875,
+          "sample_std": 95.8515715813067
+        },
+        "D2STGNN": {
+          "mean": 636.6236633300781,
+          "sample_std": 111.4124875120896
+        },
+        "CaST": {
+          "mean": 621.6123596191406,
+          "sample_std": 145.25727510074344
+        },
+        "PDFormer": {
+          "mean": 620.1605346679687,
+          "sample_std": 97.13407412183463
+        },
+        "STAEformer": {
+          "mean": 644.8787475585938,
+          "sample_std": 55.86169181928541
+        }
+      },
+      "q_BH": 0.28441109378310264,
+      "significant_at_0_05": false
+    },
+    {
+      "dataset": "synthetic",
+      "target": "speed",
+      "horizon_minutes": 60,
+      "split_id": "4d1dacc89dbc39545f03b2e23a6b3481fe0ddabe3e146727ec231149afcf832a",
+      "reference": "PDFormer",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "mean_delta_ours_minus_reference": 0.2814177513122559,
+      "p_two_sided": 0.462174434210233,
+      "models": {
+        "STCausalNet": {
+          "mean": 4.914250278472901,
+          "sample_std": 0.37726483790654863
+        },
+        "HA": {
+          "mean": 4.9432196617126465,
+          "sample_std": 0.0
+        },
+        "GraphWaveNet": {
+          "mean": 5.675892543792725,
+          "sample_std": 1.0759772145872464
+        },
+        "D2STGNN": {
+          "mean": 6.2618307113647464,
+          "sample_std": 1.5617418207309746
+        },
+        "CaST": {
+          "mean": 4.730570316314697,
+          "sample_std": 0.4085900212631825
+        },
+        "PDFormer": {
+          "mean": 4.6328325271606445,
+          "sample_std": 0.6738448336318346
+        },
+        "STAEformer": {
+          "mean": 5.354540634155273,
+          "sample_std": 0.969623684987907
+        }
+      },
+      "q_BH": 0.5546093210522797,
+      "significant_at_0_05": false
+    },
+    {
+      "dataset": "synthetic",
+      "target": "flow",
+      "horizon_minutes": 60,
+      "split_id": "4d1dacc89dbc39545f03b2e23a6b3481fe0ddabe3e146727ec231149afcf832a",
+      "reference": "D2STGNN",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "mean_delta_ours_minus_reference": 102.53818359375,
+      "p_two_sided": 0.03499992862964496,
+      "models": {
+        "STCausalNet": {
+          "mean": 691.8216064453125,
+          "sample_std": 56.02210341675329
+        },
+        "HA": {
+          "mean": 634.420654296875,
+          "sample_std": 0.0
+        },
+        "GraphWaveNet": {
+          "mean": 589.3310180664063,
+          "sample_std": 89.6230179172266
+        },
+        "D2STGNN": {
+          "mean": 589.2834228515625,
+          "sample_std": 53.525455956446145
+        },
+        "CaST": {
+          "mean": 597.8210144042969,
+          "sample_std": 66.8982150924681
+        },
+        "PDFormer": {
+          "mean": 659.9067016601563,
+          "sample_std": 65.2084176365656
+        },
+        "STAEformer": {
+          "mean": 618.6786315917968,
+          "sample_std": 78.17252477950754
+        }
+      },
+      "q_BH": 0.20999957177786976,
+      "significant_at_0_05": false
+    }
+  ]
+}

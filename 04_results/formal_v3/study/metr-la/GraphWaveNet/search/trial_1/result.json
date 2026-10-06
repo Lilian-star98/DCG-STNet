@@ -1,0 +1,23 @@
+{
+  "model": "GraphWaveNet",
+  "seed": 17,
+  "phase": "search",
+  "settings": {
+    "max_epochs": 100,
+    "patience": 15,
+    "batch_size": 8,
+    "threads": 4,
+    "history": 12,
+    "horizon": 12,
+    "weight_decay": 0.0001,
+    "hidden": 64,
+    "lr": 0.001
+  },
+  "validation_mae": 2.87699401416508,
+  "epochs": 58,
+  "best_epoch": 43,
+  "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+  "stopped_by": "early_stopping",
+  "test_evaluated": false,
+  "physics_calibrated": false
+}

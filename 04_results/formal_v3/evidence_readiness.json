@@ -1,0 +1,321 @@
+{
+  "measured_benchmarks": {
+    "metr-la": {
+      "dataset": "metr-la",
+      "evidence": "measured_speed_benchmark",
+      "sample_minutes": 5,
+      "shape": [
+        34272,
+        207,
+        1
+      ],
+      "units": "native benchmark speed; verify mph/kmh before physical use",
+      "flow_available": false,
+      "events_available": false,
+      "physics_calibrated": false,
+      "split": [
+        0,
+        20563,
+        27417,
+        34272
+      ],
+      "missing_fraction": 0.08109350825676487,
+      "missing_timestamps": 0,
+      "missing_policy": "nonfinite/zero targets masked; history forward-fill, initial training mean",
+      "normalization": "observed training samples only, per sensor",
+      "timestamp_policy": "source local clock retained; no unverified UTC conversion",
+      "adjacency": "published sensor distance weights; NOT CTM turning fractions",
+      "provenance_url": "https://github.com/liyaguang/DCRNN",
+      "raw_files": {
+        "F:\\动态因果-stgnn\\ctgcn-code-main\\ctgcn-code-main\\raw_data\\METR-LA\\METR-LA.h5": "64784b76d6fb8ec9bff4b6decafb354da2bb37840468fdccee5044e511277c05",
+        "F:\\动态因果-stgnn\\ctgcn-code-main\\ctgcn-code-main\\raw_data\\METR-LA\\adj_METR-LA.pkl": "a35687c6e15aa228dc45027b0ed2a0ea0f4ec78f573deb992c595092d12f61b3"
+      },
+      "files": {
+        "A.npy": "9b198090f595fb5b988e6cde9c267b305bad36cd3f34d17848be357ad8678765",
+        "dow.npy": "bd37303589b5a95760f1ebe5c1f0136581792f37e11826036abe6c7ea5fea574",
+        "mean.npy": "0bb18e945e4cf6023eb68be91acd1a59ae4c8a250d93cf59eabcc3afe519d4fa",
+        "observed.npy": "f5ebee22ee8e93f24ab83727c8533ef5cbbade2814c2da2d759f48ad8db4baf8",
+        "sensor_ids.npy": "3c85177dd17c4776f115609d9f676d30230a3a29807921ee16a8055d117b4e83",
+        "split.npy": "eb1305c4389394b4863344a10c9a7792217f7ef30fa9fede246f16532ad904b9",
+        "std.npy": "35226c0aa5c01b17a3b862262f26d9d58db5a88d31e3d766e38160f6b6bfd9e5",
+        "timestamps.npy": "6547da3b1660bd35f488e89e539d026f1c20b084fe9716b1266dc91269b8c5d7",
+        "tod.npy": "823445c3cf9455c4adf9e488391c465fbd86e8957e23476f283bf8b68fb2bc71",
+        "truth.npy": "d2978c47834d7eaae79369b5805d326fc8569079d06a36bfada2eb7f4877eff5",
+        "X.npy": "e39b00c5bb313fce44e40c95a58b54fbec8294b03e8faee54d9ad574566b9958",
+        "Z_global.npy": "5ba6c97dfe2830987c0da5e5156d1f5e5aeb0e7bdd013618970a72103815cef5"
+      }
+    },
+    "pems-bay": {
+      "dataset": "pems-bay",
+      "evidence": "measured_speed_benchmark",
+      "sample_minutes": 5,
+      "shape": [
+        52128,
+        325,
+        1
+      ],
+      "units": "native benchmark speed; verify mph/kmh before physical use",
+      "flow_available": false,
+      "events_available": false,
+      "physics_calibrated": false,
+      "split": [
+        0,
+        31276,
+        41701,
+        52128
+      ],
+      "missing_fraction": 0.0002609552816734695,
+      "missing_timestamps": 12,
+      "missing_policy": "nonfinite/zero targets masked; history forward-fill, initial training mean",
+      "normalization": "observed training samples only, per sensor",
+      "timestamp_policy": "source local clock retained; no unverified UTC conversion",
+      "adjacency": "published sensor distance weights; NOT CTM turning fractions",
+      "provenance_url": "https://github.com/liyaguang/DCRNN",
+      "raw_files": {
+        "F:\\动态因果-stgnn\\ctgcn-code-main\\ctgcn-code-main\\raw_data\\PEMS-BAY\\PEMS-BAY.h5": "65d69fb0a2323dba9867179eb7af47c8b814186bc459ff0a4937d21614153c8f",
+        "F:\\动态因果-stgnn\\ctgcn-code-main\\ctgcn-code-main\\raw_data\\PEMS-BAY\\adj_PEMS-BAY.pkl": "116275f5704d0d492018e14c047f7ae5004385b450aa907f88424055a4a97370"
+      },
+      "files": {
+        "A.npy": "bfe332913480221f0c1e67ff6c7a5ea8896a70a8fc2f6ff04b052842b91072b9",
+        "dow.npy": "cca5354d1cade07bd8a14e59a907cd39f58e207dc93d87e6cf103332166f40cb",
+        "mean.npy": "f020ba5b7e5bc709439e77d7a10a812a57fd163e1c7cd58af788cb43a9e910dc",
+        "observed.npy": "c24fb0a2e0ee3ef637df0e3a10ad8a0ca94a177db4b6d838d86ea46d203c0b0b",
+        "sensor_ids.npy": "25db4b3faa739006152451441a6faa25f34a66a7236979f7eb8902130fff9324",
+        "split.npy": "f93db085002ed8fc460c1bf0850f061aa986dcfb2d1709aded257a09b25c491b",
+        "std.npy": "af2b286c5ed28fc809b617e81962db100e15bf961d41e770cfa4c8cf5c8c8e9f",
+        "timestamps.npy": "f9e151fce2b8a6d809d014f1dd1fe2148dc23ecc061606ac85e311876b33a3dc",
+        "tod.npy": "5b1249cea528458b9be344d833aad13a79f9fee0c45866d99092262f18616588",
+        "truth.npy": "a07b2c3d987a0a5eb36478c224e6f732a8c9b8250f0386e385bb5f0a90136ed4",
+        "X.npy": "3fa47379f7d0b9ad8b4aedd66c123a2c3417f1478ffd207ebe8aff3d1dcf667a",
+        "Z_global.npy": "d6fa02f9f7e04f4b84fbe48c89ab14dd64e39160ca7a3fe74c8afd85acc4d698"
+      }
+    }
+  },
+  "weather": {
+    "retrieved_at": "2026-09-21T08:12:39.673299+00:00",
+    "station_inventory": {
+      "url": "https://www.ncei.noaa.gov/pub/data/noaa/isd-history.csv",
+      "path": "F:\\动态因果\\data\\evidence_v3\\weather\\isd-history.csv",
+      "sha256": "1994747ab4af1b97e63adb434b4d0d022f2daee76f0c144ea9ab46be2d906604",
+      "bytes": 2914601
+    },
+    "stations": [
+      {
+        "station": {
+          "USAF": "545110",
+          "WBAN": "99999",
+          "STATION NAME": "BEIJING - CAPITAL INTERNATIONAL AIRPORT",
+          "CTRY": "CH",
+          "STATE": "",
+          "ICAO": "ZBAA",
+          "LAT": "+40.080",
+          "LON": "+116.585",
+          "ELEV(M)": "+0035.4",
+          "BEGIN": "19451031",
+          "END": "20250824"
+        },
+        "provenance": {
+          "url": "https://www.ncei.noaa.gov/data/global-hourly/access/2017/54511099999.csv",
+          "path": "F:\\动态因果\\data\\evidence_v3\\weather\\54511099999_2017.csv",
+          "sha256": "60de0266b538bae0c8df01aecd50923f6763f7d5a1d74613207f4f94e5efcd68",
+          "bytes": 7060572
+        },
+        "matched_observations": 3414,
+        "precipitation_records": 22,
+        "status": "downloaded_raw_quality_and_spatial_matching_pending"
+      }
+    ],
+    "limitations": [
+      "Quality codes and accumulation periods must be decoded before labelling rain",
+      "Station observation does not establish weather at every road segment",
+      "Do not use future weather observations as available forecast inputs"
+    ]
+  },
+  "weather_quality": {
+    "observation_records": 3414,
+    "precipitation_fields": 26,
+    "quality_counts": {
+      "all_checks_passed": 26
+    },
+    "strict_usable_fields": 10,
+    "source_sha256": "b72d8790d8cb650b576dba6f49202f869330a7799a998b21102ad01f8879fa2f",
+    "specification": "https://www.ncei.noaa.gov/pub/data/noaa/isd-format-document.pdf",
+    "policy": "strict quality codes 1/5; keep gross-limit observations separately; do not disaggregate accumulations into observed 15-minute rainfall",
+    "spatial_match_complete": false,
+    "complete_rain_labels": false,
+    "limitations": [
+      "AA fields include liquid equivalent and do not alone distinguish rain from snow",
+      "Missing AA fields are unknown precipitation, not evidence of dry weather",
+      "Overlapping accumulation intervals are not summed"
+    ]
+  },
+  "official_sources": {
+    "Graph-WaveNet": {
+      "commit": "6b162e80c59a1d494809252eca055cff93dc66b1",
+      "path": "F:\\动态因果\\third_party\\official\\Graph-WaveNet",
+      "files": {
+        "engine.py": "89dd28d10a46882efd1859b444ecc8247a97a276b87439ba57aad70bcbde8682",
+        "generate_training_data.py": "fbae7a525f7352c699f4f3aeb5b67f5d5f2ae8a78294ce11915dbcbd174872ee",
+        "model.py": "b2fd1d7acd32d9c923f2a262c63d16e1493f174fe253a5d7dafb5e26baf5e6f8",
+        "test.py": "6573cbc4ba85bdf1e942ce568938f53d9fbd4cf13e2db889c0ab44c67c03d0a8",
+        "train.py": "0d1a84aa965e234c6e9d783982db4b2de833b05bbbe1b52ed3800989895d210f",
+        "util.py": "b03e776f3064c4735b8e1cc1876de4ac2636b7afc807b112d0650d868d62372f"
+      }
+    },
+    "D2STGNN": {
+      "commit": "82c2d38ba098a6aa87e8099c1ee8da58480692ec",
+      "path": "F:\\动态因果\\third_party\\official\\D2STGNN",
+      "files": {
+        "main.py": "6db61acd59d53a22c904c5bb850f847bd73ba29f67a8c65aa5be9e46a607bd39",
+        "dataloader\\dataloader.py": "ac785aa03d9c1d8f5649de07126eba5523ff09b0ca46bbab04a82d95250d6bd0",
+        "dataloader\\__init__.py": "58d983377b7e8d2a75e78278de414b30a007d8498df1590e4dad7374667a64f8",
+        "models\\losses.py": "9033c93147451ba905e2f049dda84b03c69d38d1bd4c55696f58d9e2baa25c56",
+        "models\\model.py": "f98d8e1f326ac740102a1afc0dd2d4ceab5e8dd3e79f4bb617e9b536cdfcb9ee",
+        "models\\trainer.py": "8cfb3848e7d3fd69d7d4388b161047daee9d936229e1bd4367e51b96329eac8f",
+        "models\\__init__.py": "3545ee97806f705d7355bc6f80a79f52110cc86e89f0b760b2ced59c3fc20a60",
+        "utils\\cal_adj.py": "4e38d51d889ab444984c645c6ec7b1e7f57f3feeacf93cc10bf580de26808142",
+        "utils\\load_data.py": "24091c8c1f78a90556869cce96f0773a74f01dfa9de9833af3f56a3fc58ef129",
+        "utils\\log.py": "344fc78d7afbaec8bf4f19b2ca1715c2cdd314b204d3b469b2ee6a9d4fb349b8",
+        "utils\\train.py": "aada41a72ba040feb2cb90f0e574f5fd8cd65925499148c5f81e150a9885abf8",
+        "utils\\__init__.py": "602aeb38dfd9a91a78992a7ad52b6623062d7e173f0b12326015140ddd5cfe9c",
+        "datasets\\sensor_graph\\describe_adjs.py": "3090afd2ac7bf899169776927343dcf5bab6b7cd07bd55e5f759cf2d96c7f0c2",
+        "datasets\\raw_data\\METR-LA\\generate_training_data.py": "2d01b2ca092071895e2c9ae2581e4c56626fd85a29aef4976b663d9e3e789b34",
+        "datasets\\raw_data\\PEMS-BAY\\generate_training_data.py": "db1e74f8cb010d11ecc1d6d2b41c7cd64659ec007849a872c7e75993b87a01b0",
+        "datasets\\raw_data\\PEMS04\\generate_adj_mx.py": "aa0fe5ac52eb005da46a32ef53b81fba988a06242ee7a20b9188698cf2c3c60e",
+        "datasets\\raw_data\\PEMS04\\generate_training_data.py": "105068208130572de1677b7174cfdd93b843163a78f7c9677c276c74d1b9f9fe",
+        "datasets\\raw_data\\PEMS08\\generate_adj_mx.py": "1cb84c0c8392ab3a2f37ed90bc209791a5038c236093184058ae29838ba1eaa9",
+        "datasets\\raw_data\\PEMS08\\generate_training_data.py": "ae8f27271c0560401bfdb04793d0b0fdb0b2f39d8469fc88ae5ecc2d3e95bf04",
+        "models\\decouple\\estimation_gate.py": "54dc6e3de98ba59fa20ce20dceced090c8e21137f7c01a37560628ae331f4980",
+        "models\\decouple\\residual_decomp.py": "c313ac712618d1264694fec2e13eaf34f08b21fd8eb82ebcc869dd4551f97009",
+        "models\\diffusion_block\\dif_block.py": "da7034a74870701bd138609e81c5437fec1d9b6388362efd415275117c8b1da8",
+        "models\\diffusion_block\\dif_model.py": "7bf8f2bad3f4977b1a59f064796f3719d270193fc15d0c0678847b2540ae9d56",
+        "models\\diffusion_block\\forecast.py": "f85ffea0d57f1494330940af7c67840e2232ae1a6694d1786829943761b5582e",
+        "models\\diffusion_block\\__init__.py": "087238a22681bc2b0646a0cc7bec4b6a72bc0c448b6f2346c4eff28957c73335",
+        "models\\dynamic_graph_conv\\dy_graph_conv.py": "60415d185d4accb09b515c349703dbc0cf5a4e9e5ea1a20faa51e47bac0ab219",
+        "models\\dynamic_graph_conv\\__init__.py": "2b56418b8030b3492d9fb59e29a32970032e5352c05d54ca2d688217ae390b0b",
+        "models\\inherent_block\\forecast.py": "558e17fe395eb79e7f4c6b80f04f49df865c5ceecc57beb7a91608881bb9012e",
+        "models\\inherent_block\\inh_block.py": "60031fba3d13f8db70d071fe188ba59e974a553def183640d06ff3f13af102c6",
+        "models\\inherent_block\\inh_model.py": "ad3e2b00c97628a9c6776630a7166631a947cdfc4666de5b604cecce7e3415b9",
+        "models\\inherent_block\\__init__.py": "0e6722a874557e449ede7c4d896524d2443d7d0baa5714eb38a605ec2111db09",
+        "models\\dynamic_graph_conv\\utils\\distance.py": "806d2fe1d595007c84bd7f75e9ef93fb11bc6ed65a244398c6d6ba2f07e41d9a",
+        "models\\dynamic_graph_conv\\utils\\mask.py": "1c0cd76ae5b0627c354899a63981a323d9cca9b12af7553087b4ba01cb800f35",
+        "models\\dynamic_graph_conv\\utils\\normalizer.py": "42ae6e9c2b2e72d100de988e1c9e1e0468bf12f2c7512fddd407f8b8187ecce7",
+        "models\\dynamic_graph_conv\\utils\\__init__.py": "57c240d6329abe3797ec4d267cd0e25ebbe7d3f45d330df711c6df4942eeb1bb"
+      }
+    },
+    "CaST": {
+      "commit": "705fa58b03602baf3e283c52f1e46297586da6fb",
+      "path": "F:\\动态因果\\third_party\\official\\CaST",
+      "files": {
+        "experiments\\cast\\main.py": "e112732d9bf1ce97d18a2b040fce290dda8c1f95ba4e9563df01837786ba3a5f",
+        "src\\base\\model.py": "0ed1b8b8d7a97b403f5ed1517ec65ecf60c353e2191f9a533b1bc119857b5de6",
+        "src\\base\\sampler.py": "9d95c25b9021ea92f891ea67c859148776d5086cb3c73fbdfbf6e8857125ea31",
+        "src\\base\\trainer.py": "583cf858e880ca4d78baaac14a5edcdc87b1c25c6b27ef9c2967462f05fd92f3",
+        "src\\layers\\cast_cell.py": "6e6031ba6071470c87a6b2dccf0b5502466fe7544166adf2d6b1f6a73bd2633a",
+        "src\\layers\\cell.py": "70dc98973e5b196098345c9e7c0c961c262d18c452d30b3064d3f188c705dc64",
+        "src\\layers\\dilated_conv.py": "6becb192f1c8b9519a2f56b6e9f39cd12a015156aba5867a3426b2f2104bfcea",
+        "src\\layers\\vq_functions.py": "00eb0b95db67b4f5e304b88c0ecee2de60dbea9e989d94867dde175b7491743d",
+        "src\\models\\cast.py": "a9ebed286dfb9a26163c5828004177b18c7a243fde22194d2a1c2a51541b9a2f",
+        "src\\trainers\\cast_trainer.py": "95aee9ecfb889c9fd4ca46c1ca29aebfd395314ca31655af5e2405960619d80a",
+        "src\\utils\\args.py": "39da5b9f6ccf6b602c8109c11aed4a616e5232acc19b13d9b106b60901b95479",
+        "src\\utils\\dataset.py": "3c9e12595897142ff8be34332aa36dee2349ed88d62ee4c543887d3bfc17b019",
+        "src\\utils\\graph_algo.py": "e92ee8093f8e56a4d0f62f8efc81f66e0a20450e60160932015028d085b7a639",
+        "src\\utils\\helper.py": "ceb4169d5e1ff455dacbef66546538e278665ea671b538f05dceccafbb8e6e46",
+        "src\\utils\\logging.py": "f4d727988bf2f16797ed006df24caa060649a6012a2561cd16f6787129bd07bc",
+        "src\\utils\\metrics.py": "d06b87fa0ec0f9ceb033107342569cf669b9b7178f76490fb1369faa9b95d406",
+        "src\\utils\\scaler.py": "92bd38ed6fe425b2e92af536346cd1c514c2514578aa405692b5bb6c5a993a1b",
+        "src\\utils\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "PDFormer": {
+      "commit": "f8c8f6ad007a04fad3baee958b89504711852ce9",
+      "path": "F:\\动态因果\\third_party\\official\\PDFormer",
+      "files": {
+        "run_model.py": "a7720abe4e23247c3732ed4a831527010c79ec9563aa6285ff68a7a9c891d1a0",
+        "libcity\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "libcity\\config\\config_parser.py": "68f31b3f3b39b31c9830b8f8a61ca0a4a8efca3bf293afbc49c37ad58e8482ea",
+        "libcity\\config\\__init__.py": "9b55d39fdacf59954ae33534da4ce4d29b53d1df4e6b2a111565df98f0467412",
+        "libcity\\data\\batch.py": "a11cf6d76e3a95c329e5fecd27a78b817c8fc86278d2c67d22f243b13284b148",
+        "libcity\\data\\list_dataset.py": "53a6a144f308fbe797d089f90a95f8120f197aa2ff7424cb0d0f93274edec722",
+        "libcity\\data\\utils.py": "04be301681ee902f6931ce8a0e2db317dc852d23274131098e5c50dbb03af627",
+        "libcity\\data\\__init__.py": "26f8d4c4a1e17fa8f898ea83acf01265c6d6f777939593bd6b2e2c105cd93227",
+        "libcity\\evaluator\\abstract_evaluator.py": "83991dc8d49be3caf762c824c453a225d86d1bbf1edcee01b141c064ed988293",
+        "libcity\\evaluator\\eval_funcs.py": "1e6717df11b652d925871859d28f81f9cc91fbe3b80209fe7ee4f12638a8f7f9",
+        "libcity\\evaluator\\traffic_state_evaluator.py": "c0564f8f1f95d8fe147a915a17a497146883858f66ee8422315d0848a705bcfa",
+        "libcity\\evaluator\\traffic_state_grid_evaluator.py": "c424650af2b5a362bf42746e2aef61fd0be8f762721321cd7aa015f487002247",
+        "libcity\\evaluator\\utils.py": "c752d997704e66eca131e166d7c21ff74d8c4bece8b29ac9b9a5ccba94f93236",
+        "libcity\\evaluator\\__init__.py": "94b6fc304ebef12313f12c2f743bd6ada0b52b8f0c122c3d00d1b8efc18665b2",
+        "libcity\\executor\\abstract_executor.py": "9f4fa43f6ab98c1b5203324cb97ff606a22ff92dafdbf79925ca4d8140fc6de3",
+        "libcity\\executor\\pdformer_executor.py": "17129c1bf6fa9c36b41ceacf05751e52faf369c5de73626ba7a827120e8d402b",
+        "libcity\\executor\\scheduler.py": "6345110b37b7056302d64dd415bdef2e8ffb14918dfcb2e168febf04609c3e0f",
+        "libcity\\executor\\traffic_state_executor.py": "f04740cf6e66648787f3642794b94a14da421f519900e7e1eb4ac854d9d643bc",
+        "libcity\\executor\\__init__.py": "2af9afccc8932a134f25a2e300787b094f18f22bebb3f517c2d8e902f162eb8e",
+        "libcity\\model\\abstract_model.py": "3e976dd2e79723f10e2475e416acd9fecc15b55b11efded8004be6378b770bc2",
+        "libcity\\model\\abstract_traffic_state_model.py": "15682984bfdb2ae822dc37d8e7ecdc748a89d391cebef1a8890a477ef3fd5d0f",
+        "libcity\\model\\loss.py": "d2f52c287fdbab8667c948806baa811bce778742c9af8c5d7156c8de2457fae1",
+        "libcity\\model\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "libcity\\pipeline\\pipeline.py": "e7c4d465a069e3b64c9ef72c8dfbb6dbeb4e1de28d55dbc79831fe84715edc7e",
+        "libcity\\pipeline\\__init__.py": "65ab61877551d4c38487d6d6678b7b2ca8429b2e101286c73738dbc6d960d3bd",
+        "libcity\\utils\\argument_list.py": "d2367d864cadcf3ac7fbd94b72da7d13f4731a6642b4fa72855b5498950041bb",
+        "libcity\\utils\\distributed.py": "dfca6183a38b2831053076c35b407fcb72bd9ac082679839d4b7218102cccd20",
+        "libcity\\utils\\normalization.py": "b576397de656a65aaabac1eee1bfa7f22cccfe33263f62a3e807eb8af6dc622e",
+        "libcity\\utils\\utils.py": "b146ae2fdcfd806916a58b7048db35249f4314a98d57c6d149bf464d2bb491a7",
+        "libcity\\utils\\__init__.py": "80330cdf9dd26b79945c21c00fa76b320d90fd28b1041e6c03a7b0c88f7e80c4",
+        "libcity\\data\\dataset\\abstract_dataset.py": "674242158b7bd210caccda2d3534261deb16c357e23f96f0ca66c520db71a723",
+        "libcity\\data\\dataset\\pdformer_dataset.py": "9d0843fd07c7dba8e4f3d175def5b0c524ba5516cf0f6a8acc2625729d88b03c",
+        "libcity\\data\\dataset\\pdformer_grid_dataset.py": "2de54c4bbb3d381dea4e74f9afc1fa28e2fdee5b5bdd928fa1706e442d97d26a",
+        "libcity\\data\\dataset\\traffic_state_datatset.py": "e053a068226294b4871988746559166aaf790b4fc452d31d0ddcd6c805a8147a",
+        "libcity\\data\\dataset\\traffic_state_grid_dataset.py": "9bcaec8466351e6e7d8521febe151d7899cf5e6e6538b41df7d9fc0473683fce",
+        "libcity\\data\\dataset\\traffic_state_point_dataset.py": "6a4e2be8f2745d5935eb988a6a346f186dfdc718349fcbd62a78e6116e036662",
+        "libcity\\data\\dataset\\__init__.py": "87562a788def0a48f36f54209cb8bf20d934039c856ab5ff61f3f7023754785c",
+        "libcity\\model\\traffic_flow_prediction\\PDFormer.py": "3bc4ffda082389e426185ef8cf5b5654251de9c617c60e08bed0421c8b385088",
+        "libcity\\model\\traffic_flow_prediction\\__init__.py": "2574c98f64e270d63a9b4774a98b6d9327665d73be24a0efee36552b9e0dc335"
+      }
+    },
+    "STAEformer": {
+      "commit": "fc49d39b2f1a8e3cf37b6289d7240680e1690f3f",
+      "path": "F:\\动态因果\\third_party\\official\\STAEformer",
+      "files": {
+        "lib\\data_prepare.py": "f6c3e94a33638e93f0851b1c0d567f3dc0f3ed720faa57fdc30ab0cc83a45640",
+        "lib\\metrics.py": "9348f2aeea54d28f5b95d905baad3434fa2bda98a8366aff92713bcbc289d05a",
+        "lib\\utils.py": "38dc74a598c28b4d3342ee4adc01f8717417ef9dae0d16b8f38520b05c69b919",
+        "model\\STAEformer.py": "ae50f056b123dd55b312ed408b7981281254cf6cd8799f38baea5dffcfd8da7c",
+        "model\\train.py": "c15cc0027129162eeedb6ba58e21ecf1397dd273c23f2583b11e3629d7cfe2b1"
+      }
+    }
+  },
+  "gates": {
+    "Q_raw_missingness": {
+      "status": "blocked",
+      "reason": "Available completion script computes weekly statistics across all 61 days; raw pre-imputation speed and mask not found",
+      "script": "F:\\动态因果\\Q\\around_traffic_mv_avg_15min_1km_completion.py",
+      "sha256": "9b05bd1a261fc9203ddd5ddc9a5a448312b47f3906c7e13bca585942f1a924fb"
+    },
+    "Q_measured_flow": {
+      "status": "blocked",
+      "reason": "No matched vehicle-count source or sampling/units provenance identified; speed proxy forbidden"
+    },
+    "real_event_labels": {
+      "status": "blocked",
+      "reason": "Existing link/time lists lack verified accident/weather/school category, announcement and source lineage"
+    },
+    "historic_school_POI": {
+      "status": "blocked",
+      "reason": "No verified 2017 school entrances, opening calendar and road mapping identified"
+    },
+    "network_calibration": {
+      "status": "blocked",
+      "reason": "Missing aligned density/flow, lane/length metadata, turns, boundary arrivals and initial state"
+    },
+    "independent_intervention": {
+      "status": "blocked",
+      "reason": "No documented held-out treatment episodes and uncontaminated donor outcomes"
+    },
+    "paper_tables": {
+      "status": "pending_training",
+      "reason": "Existing manuscript values are reference text, never computed evidence"
+    }
+  },
+  "search_scope": "Existing authorized project folders; absence here does not imply the records do not exist elsewhere",
+  "paper_complete": false
+}

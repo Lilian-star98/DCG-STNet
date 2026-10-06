@@ -1,0 +1,41 @@
+{
+  "provenance": {
+    "official": {
+      "commit": "705fa58b03602baf3e283c52f1e46297586da6fb",
+      "path": "F:\\动态因果\\third_party\\official\\CaST",
+      "files": {
+        "experiments\\cast\\main.py": "e112732d9bf1ce97d18a2b040fce290dda8c1f95ba4e9563df01837786ba3a5f",
+        "src\\base\\model.py": "0ed1b8b8d7a97b403f5ed1517ec65ecf60c353e2191f9a533b1bc119857b5de6",
+        "src\\base\\sampler.py": "9d95c25b9021ea92f891ea67c859148776d5086cb3c73fbdfbf6e8857125ea31",
+        "src\\base\\trainer.py": "583cf858e880ca4d78baaac14a5edcdc87b1c25c6b27ef9c2967462f05fd92f3",
+        "src\\layers\\cast_cell.py": "6e6031ba6071470c87a6b2dccf0b5502466fe7544166adf2d6b1f6a73bd2633a",
+        "src\\layers\\cell.py": "70dc98973e5b196098345c9e7c0c961c262d18c452d30b3064d3f188c705dc64",
+        "src\\layers\\dilated_conv.py": "6becb192f1c8b9519a2f56b6e9f39cd12a015156aba5867a3426b2f2104bfcea",
+        "src\\layers\\vq_functions.py": "00eb0b95db67b4f5e304b88c0ecee2de60dbea9e989d94867dde175b7491743d",
+        "src\\models\\cast.py": "a9ebed286dfb9a26163c5828004177b18c7a243fde22194d2a1c2a51541b9a2f",
+        "src\\trainers\\cast_trainer.py": "95aee9ecfb889c9fd4ca46c1ca29aebfd395314ca31655af5e2405960619d80a",
+        "src\\utils\\args.py": "39da5b9f6ccf6b602c8109c11aed4a616e5232acc19b13d9b106b60901b95479",
+        "src\\utils\\dataset.py": "3c9e12595897142ff8be34332aa36dee2349ed88d62ee4c543887d3bfc17b019",
+        "src\\utils\\graph_algo.py": "e92ee8093f8e56a4d0f62f8efc81f66e0a20450e60160932015028d085b7a639",
+        "src\\utils\\helper.py": "ceb4169d5e1ff455dacbef66546538e278665ea671b538f05dceccafbb8e6e46",
+        "src\\utils\\logging.py": "f4d727988bf2f16797ed006df24caa060649a6012a2561cd16f6787129bd07bc",
+        "src\\utils\\metrics.py": "d06b87fa0ec0f9ceb033107342569cf669b9b7178f76490fb1369faa9b95d406",
+        "src\\utils\\scaler.py": "92bd38ed6fe425b2e92af536346cd1c514c2514578aa405692b5bb6c5a993a1b",
+        "src\\utils\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "protocol": "author architecture and auxiliary losses; unified training",
+    "preprocessing": "same physical candidate graph; correlation train-only; exact DTW from historical speed",
+    "compatibility": [
+      "torch_sparse preprocessing replaced by equivalent incidence-matrix algebra"
+    ]
+  },
+  "environment": {
+    "python": "3.12.12 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 20:05:38) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4",
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "parameters": 175750
+}

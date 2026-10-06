@@ -1,0 +1,8 @@
+{
+  "state": "running",
+  "phase": "search",
+  "dataset": "metr-la",
+  "model": "CaST",
+  "trial": 0,
+  "started": 1790795247.7121215
+}

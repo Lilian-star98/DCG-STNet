@@ -1,0 +1,92 @@
+[
+  {
+    "epoch": 1,
+    "train_objective": 2.241522920584377,
+    "validation_mae": 8.374466742106067,
+    "seconds": 8875.985000000044
+  },
+  {
+    "epoch": 2,
+    "train_objective": 1.7615564063089848,
+    "validation_mae": 8.925013919011201,
+    "seconds": 8910.375
+  },
+  {
+    "epoch": 3,
+    "train_objective": 1.722268724348668,
+    "validation_mae": 7.997335991345788,
+    "seconds": 8880.92200000002
+  },
+  {
+    "epoch": 4,
+    "train_objective": 1.4973055216214441,
+    "validation_mae": 7.951286472985882,
+    "seconds": 8909.20299999998
+  },
+  {
+    "epoch": 5,
+    "train_objective": 1.4568662396192318,
+    "validation_mae": 7.7739845655660575,
+    "seconds": 8926.061999999976
+  },
+  {
+    "epoch": 6,
+    "train_objective": 1.4284828477384053,
+    "validation_mae": 8.401397958801788,
+    "seconds": 8997.406000000017
+  },
+  {
+    "epoch": 7,
+    "train_objective": 1.4105045419124689,
+    "validation_mae": 8.122577094787319,
+    "seconds": 9430.5
+  },
+  {
+    "epoch": 8,
+    "train_objective": 1.3893151645651114,
+    "validation_mae": 7.724013380334993,
+    "seconds": 9402.515000000001
+  },
+  {
+    "epoch": 9,
+    "train_objective": 1.3775877875501712,
+    "validation_mae": 7.411089731916028,
+    "seconds": 9466.828000000001
+  },
+  {
+    "epoch": 10,
+    "train_objective": 1.365769856721308,
+    "validation_mae": 7.827828193850034,
+    "seconds": 9447.297000000002
+  },
+  {
+    "epoch": 11,
+    "train_objective": 1.3536808753547558,
+    "validation_mae": 7.15456083508647,
+    "seconds": 9557.953000000001
+  },
+  {
+    "epoch": 12,
+    "train_objective": 1.338265879709045,
+    "validation_mae": 7.361713789505086,
+    "seconds": 9668.843999999997
+  },
+  {
+    "epoch": 13,
+    "train_objective": 1.3326276009363696,
+    "validation_mae": 7.539477730247785,
+    "seconds": 9322.671999999999
+  },
+  {
+    "epoch": 14,
+    "train_objective": 1.3245786369949608,
+    "validation_mae": 7.16735338951158,
+    "seconds": 9366.235
+  },
+  {
+    "epoch": 15,
+    "train_objective": 1.3182837142916477,
+    "validation_mae": 7.702851090060948,
+    "seconds": 9278.077999999994
+  }
+]

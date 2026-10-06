@@ -1,0 +1,227 @@
+{
+  "plan": {
+    "purpose": "Real-speed unified-protocol benchmark; this is not complete-paper reproduction",
+    "datasets": [
+      "metr-la",
+      "pems-bay"
+    ],
+    "search_seed": 17,
+    "final_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "prediction_ablations": [
+      "w/o Scene",
+      "w/o Macro",
+      "w/o Dynamic",
+      "w/o Causal-Reg"
+    ],
+    "training": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001
+    },
+    "models": {
+      "STCausalNet": [
+        {
+          "hidden": 32,
+          "lr": 0.001
+        },
+        {
+          "hidden": 64,
+          "lr": 0.001
+        },
+        {
+          "hidden": 32,
+          "lr": 0.0003
+        }
+      ],
+      "GraphWaveNet": [
+        {
+          "hidden": 32,
+          "lr": 0.001
+        },
+        {
+          "hidden": 64,
+          "lr": 0.001
+        },
+        {
+          "hidden": 32,
+          "lr": 0.0003
+        }
+      ],
+      "D2STGNN": [
+        {
+          "hidden": 32,
+          "lr": 0.001
+        },
+        {
+          "hidden": 64,
+          "lr": 0.001
+        },
+        {
+          "hidden": 32,
+          "lr": 0.0003
+        }
+      ],
+      "STAEformer": [
+        {
+          "hidden": 32,
+          "lr": 0.001
+        },
+        {
+          "hidden": 32,
+          "lr": 0.0003
+        },
+        {
+          "hidden": 32,
+          "lr": 0.0001
+        }
+      ],
+      "CaST": [
+        {
+          "hidden": 16,
+          "lr": 0.001
+        },
+        {
+          "hidden": 32,
+          "lr": 0.001
+        },
+        {
+          "hidden": 16,
+          "lr": 0.0003
+        }
+      ],
+      "PDFormer": [
+        {
+          "hidden": 32,
+          "lr": 0.001
+        },
+        {
+          "hidden": 32,
+          "lr": 0.0003
+        },
+        {
+          "hidden": 32,
+          "lr": 0.0001
+        }
+      ]
+    },
+    "selection": "Full validation split MAE averaged over all 12 horizons; search never scores test targets",
+    "not_available_yet": [
+      "Official-protocol published-score reproduction",
+      "Q measured flow and original missing mask",
+      "calibrated real CTM episodes",
+      "independent real intervention evidence"
+    ]
+  },
+  "source": {
+    "src\\dc_ctgcn\\baselines.py": "4e892152476d8464aeb55113ab5bec2f8ae7cca9d7a331f1f8e378cee7fd8982",
+    "src\\dc_ctgcn\\data_utils.py": "1a5a93fdbbfd8c5e1106dfdf03522a0ae9174ac414bc212ee7a785a05834451a",
+    "src\\dc_ctgcn\\metrics.py": "8bd509834c8ac37c6f02d6e9efb2196879ae818d5fe34de62c8ece5b1a129452",
+    "src\\dc_ctgcn\\run_experiments.py": "dd76fd74c8708a7ac8209e33d28db9151f888b6c4517cf8b5ca584e2f4e21110",
+    "src\\dyca_stgnn\\__init__.py": "e063d635a70920ffbb9e14ceca1e1988c18c1498abe1da5450672aa84b6f2f1a",
+    "src\\dyca_stgnn\\model.py": "d7ec648a22cad43423b9155527f6836a44c1af73a3de3dcdddd86e7532443c2d",
+    "src\\dyca_stgnn\\pdformer.py": "9d8f3817091460faac9315f9b4b1e4fd378d0c78ff2289809ae6b8c2d1070beb",
+    "src\\dyca_stgnn\\staeformer.py": "31aafb29d3f8c93dabfd73877733c64b73c3e7658d98b555b9e7b247837e5870",
+    "src\\dyca_stgnn\\synth\\__init__.py": "4d62db16b56a26f78b7ac5ad69031c8c6c7219c71bf84e60ba2daaaa166930e1",
+    "src\\dyca_stgnn\\synth\\cli.py": "591d01f9f0ce1f2e147d26194e05bed7098ad2c321953c86a9d26786829f4f38",
+    "src\\dyca_stgnn\\synth\\fit.py": "898f7925a35e23ebf9b4ac00effe7de2f5ee4575787c2ae8eb39a9b58979c21e",
+    "src\\dyca_stgnn\\synth\\generate.py": "3b43223c4f8d3d2a084cd589bc53fffc876a2bb91d83ef92ab38645142c4b0f5",
+    "src\\dyca_stgnn\\synth\\io.py": "b3d6f31f29b164b95161fe6df760516ed10129a224bb2fd4c5d5ccd0c3a8e650",
+    "src\\dyca_stgnn\\synth\\metrics.py": "9558cfb7b91cd76413335b05ced256499797628fb751c04ccf7a9363b1133050",
+    "src\\dyca_stgnn\\synth\\q_plot.py": "8f1302aab08de0d3b08e4202170f6364622f5cad3d113e0ce7414906fe064750",
+    "src\\dyca_stgnn\\synth\\q_report.py": "da707ad911110c5720cfb6d85e725e452bb5ab5a0ff2f4796bf488ac8ffa2426",
+    "src\\dyca_stgnn\\synth\\q_scenarios.py": "549bee7273f53a0cadd0fc7c2e70f066a4f1c71032c928246fcf4266ebd72115",
+    "src\\dyca_stgnn\\synth\\report.py": "f907d19b632274ef7bacc219f14247524bdce52358a63ec2230ba7842863b8cf",
+    "src\\dyca_stgnn\\synth\\stats.py": "43d155c212a67af6edbf9c32a77736d4c8b7d7a361a90c6588c0d94d151815bf",
+    "src\\dyca_stgnn\\synth\\viz.py": "c287fd1547e902ed7c3927583b9d030d4a74ed542fb66bb55fdf5c5451a6fbdc",
+    "src\\dyca_stgnn\\trainer.py": "4504293ad631b78cb13f8bac05876bd1a4e20184b41cb9a57d03cd911664808a",
+    "src\\dyca_stgnn\\utils.py": "c14006e3e6b2a08a6f707231346087ba1d18b2a75f93c8200a273e45d7f31334",
+    "src\\paper\\__init__.py": "a734646afc0e4ea54b3e732994979cd628001c142583e533e33823c9e4c85e17",
+    "src\\paper\\baselines\\__init__.py": "79221e9c7e0de819056d811915bb8ee718bb136427818160368ce7909a41f735",
+    "src\\paper\\baselines\\cast.py": "07565c9275d459dad8a7e1ca90fa3578c617ca70ac4d3f2727dc4a296f60fbf4",
+    "src\\paper\\baselines\\common.py": "f4443f2a42bda5800c6426da54644d21e076d97cea9856f6a141db74b1a96a5a",
+    "src\\paper\\baselines\\d2stgnn.py": "6b17ce566e15be8a288ff6ed4ad879c27cf2f6737ec4ec732cf4ae42d8ec5f3b",
+    "src\\paper\\baselines\\graphwavenet.py": "35db1360ab77eb7d1f51ddcd04eb8cedde011784036a468063daa0f4140d16b0",
+    "src\\paper\\baselines\\pdformer.py": "480a22ba55643391138d22a0b1cf1f1390f701198389b268a28f0ec4f1e48df1",
+    "src\\paper\\baselines\\staeformer.py": "f5e97059512b10fc9b89f8ca61627c75108ddf6a61c3afe3ca5492082dc35686",
+    "src\\paper\\config.py": "73e412028f2cd958c4408ecbcf56f58fcec655ccc2a28e2b11a0a521a7b7ec6a",
+    "src\\paper\\data\\__init__.py": "5b021b1169b2cceff0930add4e5935f607c8438b7238a93b38e3761840a1e8e1",
+    "src\\paper\\data\\features.py": "7bc1b009a59fc6350466e85f3f75fcbc724da38686d687ac4917b9d10ab35582",
+    "src\\paper\\data\\loaders.py": "4dc2c2f710889ff04d3724199f6c2d11feee0df80313c42a2822f7939be82e79",
+    "src\\paper\\data\\preprocess.py": "46ec00e175e9c3e577a4ab1c04024e227d4de6830d28a1186534034b0da4cd58",
+    "src\\paper\\data\\q_real.py": "e9041a453386985b98c327bd66b8bf066279be36b0b0a1285c6de8139601e59f",
+    "src\\paper\\experiments\\__init__.py": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "src\\paper\\experiments\\benchmark.py": "787c2d1703b9fe3cc9a73a53f08d1482f09ad22a45808c73abb0fc5c86fd78d5",
+    "src\\paper\\experiments\\counterfactual_study.py": "7373938dccea7a3600fdd4c14ffbb9d6728ce7574945a5e6cadc8e51c6c96f8a",
+    "src\\paper\\experiments\\eval_ablation.py": "f8661a2f515e07084b609fd35bee73f3d8617eec0c1b3a19cf50ab4c3b98202b",
+    "src\\paper\\experiments\\eval_events.py": "d735181f420fe408be9a7556cc5691683bcd0bc630c838e268092ea585748eeb",
+    "src\\paper\\experiments\\eval_forecast.py": "fb6b0d3db7e467c5c918ea874ca4c83506f091f159f3707ac299b1a33bc8119f",
+    "src\\paper\\experiments\\protocol.py": "32c7f8d5f71b23567929bded58bf44c5eb2f05d1ef45d10d41b7724a62c7cdbe",
+    "src\\paper\\experiments\\render_benchmark_tables.py": "99227a239f78e3a518498626abad2cb8462fee140d1c6804f7fe20692a4e743f",
+    "src\\paper\\experiments\\train.py": "e9d10b950dbf3004dbbd183d95725341babd299d309637c6e7d09be702ed24b3",
+    "src\\paper\\figures\\__init__.py": "b5e36688e0be3f4a8e71aee07c4828e286c1fcc1acce12d04a3a11fc33d49436",
+    "src\\paper\\figures\\__main__.py": "2f6b9bba7c75478e8181b3b8b0017215e313d47cdea34971bf64f7041b054ba4",
+    "src\\paper\\figures\\fig1_local_flow.py": "814ca926249fde3ef7c3eb25b417c0a642cdcdd1462061a7eef62b47bc044a90",
+    "src\\paper\\figures\\fig2_lane_narrowing.py": "560453a1c857372f3c7d20056df2aae9b595b497c1d6aa05ed42c79e42b4b7b3",
+    "src\\paper\\figures\\fig3_rainfall_speed.py": "ee74765b24ed38131b372be67eb31b0bbda8683c059b87be6c6a995ea09e499b",
+    "src\\paper\\figures\\fig4_weather_topology.py": "a2cfa44b1bb89573ab11df8f3a6d3e6a52df81321770876912796340e869d1f2",
+    "src\\paper\\figures\\fig5_school_hotspot.py": "2e1b6ad01931337c7a80c0e3e317f946084cf20220ba4d581f4e55419d2bc3c6",
+    "src\\paper\\figures\\fig6_micro_state.py": "55d4774234fbdc61af5d8a595d284ec1a990fdca64188bc1afc776f780330403",
+    "src\\paper\\figures\\fig7_ripple_effect.py": "425137c7486e30b4601828f75d9f85bbcaf9f826c218e1a31a821d61978ad190",
+    "src\\paper\\figures\\fig8_subnet_topology.py": "949d6108aedc5134ed397d1103f49bdffbb63dca7c5b01e8883f1557086df52d",
+    "src\\paper\\figures\\style.py": "be7ffaaaf8a760ec7b7d28f5d0958634e9355d4e7fc3fbd3863d3c31753abd38",
+    "src\\paper\\formal\\__init__.py": "d4a1160d61afa543a657449fea4d6da298b5a004c69a082ce73c3029922001b0",
+    "src\\paper\\formal\\calibration.py": "384dd4519ea5d842c9f372382ff478a365423198c0abe64d0dd9b8a5ca0ff26f",
+    "src\\paper\\formal\\cast_adapter.py": "389390503647d3e3c76468ee1cf44907450f3e1e5f455e519de82e93f6dd5c84",
+    "src\\paper\\formal\\common.py": "e3ec50d654570cd9b94fddc5c0084613e02d029b90547ee32312da7b4706012d",
+    "src\\paper\\formal\\events.py": "e9be8615935feb5802c156bc3a72b3bef25aad2a9ad83567283d9dce9bde3c81",
+    "src\\paper\\formal\\models.py": "b63ae6709272def61213fa0b5e4e29b24e645ab382a9c3e7bd8c91e907078afa",
+    "src\\paper\\formal\\pdformer_adapter.py": "18c3273d4b8854b2246ddb83655c76be4bcfb1065a7149fd5559286e60ce0cba",
+    "src\\paper\\formal\\prepare.py": "bf8f6e96201542e49bbf26491a9b143b0abc98091ba84244b1f3f0ab7e2cc6c4",
+    "src\\paper\\formal\\report.py": "855aa35646c95ee97140bff746ad9e0d601349e37f25d5545ca19edc7c696cef",
+    "src\\paper\\formal\\sparse_graph.py": "5d0cc9fff4ddf36ec76dc85c6971ee4aee0161962801ae30af60c225a2fae0f3",
+    "src\\paper\\formal\\study.py": "e51807ae5d01056dd3ea8a95b6ae0fcd71ed56a995e08f3fda51ef9c64248b8f",
+    "src\\paper\\formal\\train.py": "c3d61c1532f00055b82b91d5a26e574d5dae0051a0114f9f5736b4d054b185dc",
+    "src\\paper\\model\\__init__.py": "506acdfa7e6a11be5310c328dd0385c685ae4adf6512ef0f0602d095716a4bf6",
+    "src\\paper\\model\\candidate_edges.py": "239f4ebe4125a4cf3cd141e1afe3ba34461b7cb2d85028389dcaa9ac20c02131",
+    "src\\paper\\model\\counterfactual.py": "0354f5aa80244aba2e71fbbca647410623f98dd22d87c16dfa0dcae2d4adaab8",
+    "src\\paper\\model\\dynamic_causal_graph.py": "b2a753620e310e0969e70955206a19c49f891dbc846956c4e7e50f63bcdb38de",
+    "src\\paper\\model\\fusion_adj.py": "037e6e20d6416a527370d59ba97081d2666a77b2d0a48d130f954607357e9b0f",
+    "src\\paper\\model\\hierarchical_graph.py": "c9cacec8f6f7e7b961379e296b13523726b82d074d93a57b6b04ebb028382fa8",
+    "src\\paper\\model\\latent_macro.py": "01945659481de66a77f41d791aa19388b9c2b17a5bf3c4ee46e76a1b882656b1",
+    "src\\paper\\model\\losses.py": "38fca71d4a5bfe0036725f51eb5cf4812f8ad10cb851701da56ae5bb99bd7993",
+    "src\\paper\\model\\node_dynamics.py": "24fc856675227419c640a04386d3eafed3c042ee5406445af86faf33101a0f7c",
+    "src\\paper\\model\\physics.py": "5d0d6c5940ed3a43fffbaf466e2ba1f60556597bc2bfa52123dc0deb5b904c97",
+    "src\\paper\\model\\scenario_encoder.py": "c8b78849477ced1e691868b3907a4f78bd46ab2b7bee6833c7563e4ddf0143c9",
+    "src\\paper\\model\\stcausalnet.py": "5d1f03daa349897373f5f007a46115c0e8ed5c17af6e96cf1bf9f8e8a8786d86",
+    "src\\paper\\run_paper_pipeline.py": "5b91ade47ab858f22918a3bf766a66dc509d8103ddd73b27fc0d029a3abc9709",
+    "src\\paper\\scenarios\\__init__.py": "caa6a17077d8cc007d35fde3e36516e5ff9d4120370d77488f68c21e22dc3691",
+    "src\\paper\\scenarios\\ctm.py": "f5bf06d6dd763e87bdf8c9f5bec06fe477244c80b35bd09ef253dc9de1eadb1d",
+    "src\\paper\\scenarios\\e3_capacity_drop.py": "b42f5cc770a148e7895997102ee11a938060e322c039414733246a0015e54071",
+    "src\\paper\\scenarios\\e4_weather.py": "af79528c07ed4245720e9c8fe7c31ea21a3614c8cf223245a7f7078c6a254918",
+    "src\\paper\\scenarios\\e5_school.py": "a727db19d3fd0726129b47d0676c7cf19046b71e246b7a04021c89735c5ff292",
+    "src\\paper\\scenarios\\e_real_q.py": "c76a0ad50c1de410f172bd85fb278f36cd57cabd892ca232a43be3e4dff43e2f",
+    "src\\paper\\scenarios\\generate.py": "338bd89b780f9554ec35fd9553c2455f244ad6d46678f39a913c5ec3af613350",
+    "src\\paper\\scenarios\\intensity.py": "b9a6f41edcee56477a46c0a6251f4a987d5b4609b47982b1ada587cf380462dd",
+    "src\\paper\\scenarios\\network.py": "51a430cae22e8b6eb585b43b06048a0cecd38d1e6f6d5451be13fdb50501bab8",
+    "src\\paper\\scenarios\\suite.py": "218261cba45d2befae04d634c6865cfc527f79675265fda883c9a5913edcbde4",
+    "src\\paper\\tables\\__init__.py": "c846364d61b882461bfd8b4d8a6df717549c5689a33ced53caa57bff56853bdf",
+    "src\\paper\\tables\\__main__.py": "e2c8232334eeab5e97f33e0ce38accf2208222ca16fd6cd72b5f7f20c462481f",
+    "src\\paper\\tables\\formatters.py": "7730839886bd8a166c3dd9c1a92b52034b16c8ca0f34628c35900a4db18d2f5d",
+    "src\\paper\\tables\\metrics.py": "4e2030adc1e04c7461ab925841238ef6ed2b35acb886b118eff212f8091be40c",
+    "src\\paper\\tables\\table1_in_distribution.py": "b52e2d66324e216855a74a6c17c7d20c77450621cde59e24fe0ff0ad20378cd0",
+    "src\\paper\\tables\\table2_event_stratified.py": "184e7f48a909890696fce6b591d888f34cef625f9c742346e74b93854c3629c5",
+    "src\\paper\\tables\\table3_ablation_pred.py": "1cb09bcdce4f0bc36175f70d8843247175c9bb26c9669e6d55c5b34b13112472",
+    "src\\paper\\tables\\table4_ablation_cf.py": "900dd461d98262889bba8675c77eee37a6f0264adbe23a5aa9044a3e9fe7a24f"
+  },
+  "config_sha256": "c3ce7c09629a596b6705a9cdd3d60bc5d91e16b7a63689b84d70ed3cc74f5e23"
+}

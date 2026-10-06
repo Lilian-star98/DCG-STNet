@@ -1,0 +1,51 @@
+{
+  "provenance": {
+    "official": {
+      "commit": "6b162e80c59a1d494809252eca055cff93dc66b1",
+      "path": "F:\\动态因果\\third_party\\official\\Graph-WaveNet",
+      "files": {
+        "engine.py": "89dd28d10a46882efd1859b444ecc8247a97a276b87439ba57aad70bcbde8682",
+        "generate_training_data.py": "fbae7a525f7352c699f4f3aeb5b67f5d5f2ae8a78294ce11915dbcbd174872ee",
+        "model.py": "b2fd1d7acd32d9c923f2a262c63d16e1493f174fe253a5d7dafb5e26baf5e6f8",
+        "test.py": "6573cbc4ba85bdf1e942ce568938f53d9fbd4cf13e2db889c0ab44c67c03d0a8",
+        "train.py": "0d1a84aa965e234c6e9d783982db4b2de833b05bbbe1b52ed3800989895d210f",
+        "util.py": "b03e776f3064c4735b8e1cc1876de4ac2636b7afc807b112d0650d868d62372f"
+      }
+    },
+    "compatibility": [
+      "gate_convs.0: Conv1d -> Conv2d for original 2D kernel",
+      "gate_convs.1: Conv1d -> Conv2d for original 2D kernel",
+      "gate_convs.2: Conv1d -> Conv2d for original 2D kernel",
+      "gate_convs.3: Conv1d -> Conv2d for original 2D kernel",
+      "gate_convs.4: Conv1d -> Conv2d for original 2D kernel",
+      "gate_convs.5: Conv1d -> Conv2d for original 2D kernel",
+      "gate_convs.6: Conv1d -> Conv2d for original 2D kernel",
+      "gate_convs.7: Conv1d -> Conv2d for original 2D kernel",
+      "residual_convs.0: Conv1d -> Conv2d for original 2D kernel",
+      "residual_convs.1: Conv1d -> Conv2d for original 2D kernel",
+      "residual_convs.2: Conv1d -> Conv2d for original 2D kernel",
+      "residual_convs.3: Conv1d -> Conv2d for original 2D kernel",
+      "residual_convs.4: Conv1d -> Conv2d for original 2D kernel",
+      "residual_convs.5: Conv1d -> Conv2d for original 2D kernel",
+      "residual_convs.6: Conv1d -> Conv2d for original 2D kernel",
+      "residual_convs.7: Conv1d -> Conv2d for original 2D kernel",
+      "skip_convs.0: Conv1d -> Conv2d for original 2D kernel",
+      "skip_convs.1: Conv1d -> Conv2d for original 2D kernel",
+      "skip_convs.2: Conv1d -> Conv2d for original 2D kernel",
+      "skip_convs.3: Conv1d -> Conv2d for original 2D kernel",
+      "skip_convs.4: Conv1d -> Conv2d for original 2D kernel",
+      "skip_convs.5: Conv1d -> Conv2d for original 2D kernel",
+      "skip_convs.6: Conv1d -> Conv2d for original 2D kernel",
+      "skip_convs.7: Conv1d -> Conv2d for original 2D kernel"
+    ],
+    "protocol": "unified 6:2:2, masked targets, speed+time+weekday input; not author-protocol reproduction"
+  },
+  "environment": {
+    "python": "3.12.12 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 20:05:38) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4",
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "parameters": 671544
+}

@@ -1,0 +1,1 @@
+Synthetic execution coverage only. E3 is the training episode; remaining interventions share its network and base demand. These are not independent real-Q test results. PVR here reports speed/capacity bounds; conservation diagnostics are available only for CTM-projected variants. Do not copy results into paper tables.

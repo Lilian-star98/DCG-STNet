@@ -1,0 +1,49 @@
+{
+  "model": "STAEformer",
+  "seed": 2,
+  "phase": "final",
+  "settings": {
+    "max_epochs": 100,
+    "patience": 15,
+    "batch_size": 8,
+    "threads": 4,
+    "history": 12,
+    "horizon": 12,
+    "weight_decay": 0.0001,
+    "hidden": 32,
+    "lr": 0.0003
+  },
+  "validation_mae": 2.848883025633953,
+  "epochs": 31,
+  "best_epoch": 16,
+  "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+  "stopped_by": "early_stopping",
+  "test_evaluated": true,
+  "physics_calibrated": false,
+  "test": {
+    "15": {
+      "count": 1242568,
+      "MAE": 2.736426365186013,
+      "RMSE": 5.23971115264031,
+      "MAPE_percent": 7.347272081627423
+    },
+    "30": {
+      "count": 1242550,
+      "MAE": 3.065445288786883,
+      "RMSE": 6.177524027072319,
+      "MAPE_percent": 8.672359549288464
+    },
+    "60": {
+      "count": 1242514,
+      "MAE": 3.457547151782549,
+      "RMSE": 7.195154524491993,
+      "MAPE_percent": 10.24820197176339
+    }
+  },
+  "test_all_horizons": {
+    "count": 14910564,
+    "MAE": 3.0313189128489504,
+    "RMSE": 6.127555676924052,
+    "MAPE_percent": 8.538288268878915
+  }
+}

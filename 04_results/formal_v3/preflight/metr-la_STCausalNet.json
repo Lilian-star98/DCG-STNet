@@ -1,0 +1,51 @@
+{
+  "model": "STCausalNet",
+  "dataset": "metr-la",
+  "status": "passed",
+  "nodes": 207,
+  "batch_size": 8,
+  "peak_gpu_mb": 390.36474609375,
+  "batch_checks_seconds": 0.9059999999881256,
+  "initialization_seconds": 0.07800000000861473,
+  "provenance": {
+    "architecture": "STCausalNet forecast adapter",
+    "config": {
+      "num_nodes": 207,
+      "d_x": 1,
+      "d_u": 1,
+      "d_z_loc": 4,
+      "d_z_glob": 5,
+      "d_w": 0,
+      "d_y": 1,
+      "d_hidden": 32,
+      "d_scenario": 16,
+      "d_latent": 8,
+      "k_neighbors": 8,
+      "d_decay": 1500.0,
+      "gumbel_tau": 0.5,
+      "alpha_static_adj": 0.5,
+      "n_regions": 0,
+      "lambda_sparse": 0.001,
+      "lambda_smooth": 0.001,
+      "lambda_dual": 0.1,
+      "lambda_kl": 0.001,
+      "lambda_res_smooth": 0.0001,
+      "lambda_inv": 0.0,
+      "prediction_loss": "mae",
+      "hist": 12,
+      "horizon": 12,
+      "lr": 0.001,
+      "lr_graph": 0.003,
+      "lr_latent": 0.0003,
+      "weight_decay": 0.0,
+      "dropout": 0.1,
+      "use_physics": false
+    },
+    "physics": false,
+    "scene_inputs": "calendar only; local events and controls unavailable",
+    "modifications": [
+      "candidate-only edge MLP evaluation",
+      "direct multi-horizon forecast head"
+    ]
+  }
+}

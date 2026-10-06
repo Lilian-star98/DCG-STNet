@@ -1,0 +1,44 @@
+{
+  "table1_in_distribution": {
+    "caption": "METR-LA and PEMS-BAY in-distribution multi-step prediction (H=12)",
+    "horizon": 12,
+    "metrics": ["MAE", "RMSE", "MAPE"],
+    "rows": [
+      {"model": "GraphWaveNet", "METR-LA": [2.97, 6.91, 7.30], "PEMS-BAY": [1.21, 2.61, 2.80]},
+      {"model": "D2STGNN", "METR-LA": [2.84, 6.25, 7.15], "PEMS-BAY": [1.14, 2.48, 2.65]},
+      {"model": "CaST", "METR-LA": [2.82, 6.20, 7.08], "PEMS-BAY": [1.15, 2.50, 2.70]},
+      {"model": "PDFormer", "METR-LA": [2.76, 6.12, 6.95], "PEMS-BAY": [1.12, 2.44, 2.60]},
+      {"model": "STAEformer", "METR-LA": [2.62, 5.85, 6.65], "PEMS-BAY": [1.08, 2.35, 2.48]},
+      {"model": "STCausalNet", "METR-LA": [2.72, 5.98, 6.82], "PEMS-BAY": [1.10, 2.42, 2.58]}
+    ]
+  },
+  "table2_event_stratified": {
+    "caption": "Q-Traffic event-stratified MAE (speed) and PDR vs S1",
+    "rows": [
+      {"model": "GraphWaveNet", "S1": 2.76, "S2": 4.98, "S3": 3.82, "S4": 3.35},
+      {"model": "D2STGNN", "S1": 2.65, "S2": 4.20, "S3": 3.50, "S4": 3.12},
+      {"model": "STAEformer", "S1": 2.62, "S2": 4.35, "S3": 3.45, "S4": 3.08},
+      {"model": "CaST", "S1": 2.68, "S2": 4.05, "S3": 3.30, "S4": 3.02},
+      {"model": "DCG-STNet", "S1": 2.63, "S2": 3.65, "S3": 3.05, "S4": 2.88}
+    ]
+  },
+  "table3_ablation_pred": {
+    "caption": "Prediction ablation (horizon = 60 min), MAE / RMSE",
+    "rows": [
+      {"variant": "DCG-STNet (full)", "METR-LA": [3.45, 7.12], "Q-Traffic": [3.65, 7.88], "note": "full model"},
+      {"variant": "w/o Scene", "METR-LA": [3.52, 7.25], "Q-Traffic": [3.98, 8.52], "note": "non-stationary events"},
+      {"variant": "w/o Macro", "METR-LA": [3.55, 7.32], "Q-Traffic": [3.82, 8.15], "note": "global confounders"},
+      {"variant": "w/o Dynamic", "METR-LA": [3.68, 7.55], "Q-Traffic": [4.10, 8.90], "note": "local topology evolution"},
+      {"variant": "w/o Causal-Reg", "METR-LA": [3.42, 7.08], "Q-Traffic": [3.75, 8.05], "note": "overfitting correlations"}
+    ]
+  },
+  "table4_ablation_cf": {
+    "caption": "Counterfactual validity ablation (PVR / TED / sparsity)",
+    "rows": [
+      {"variant": "DCG-STNet (full)", "PVR": 0.4, "TED": 1.24, "sparsity": 92.5},
+      {"variant": "w/o Physics", "PVR": 18.7, "TED": 3.56, "sparsity": 92.5},
+      {"variant": "w/o Causal-Reg", "PVR": 0.5, "TED": 4.12, "sparsity": 15.3},
+      {"variant": "w/o Scene", "PVR": 1.2, "TED": 2.89, "sparsity": 88.0}
+    ]
+  }
+}

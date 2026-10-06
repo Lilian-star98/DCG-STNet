@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-09-21T23:19:22.289665+08:00",
+  "archive": "真实证据与正式训练_v3_阶段快照.zip",
+  "archive_sha256": "a71ed53aac6ce1e26a924336c8ad1298b23dd804420a4f1ac15c09b44e9bd51f",
+  "archive_bytes": 328972484,
+  "verified_entries": 463,
+  "frozen_source_verified": true,
+  "complete_paper_reproduction": false
+}

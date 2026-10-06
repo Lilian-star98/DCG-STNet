@@ -1,0 +1,74 @@
+[
+  {
+    "dataset": "metr-la",
+    "model": "STCausalNet",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 64,
+      "lr": 0.001
+    },
+    "validation_mae": 3.1127217236801727,
+    "trial": 1,
+    "scope": "best validation MAE among prespecified completed configurations, not a global optimum"
+  },
+  {
+    "dataset": "metr-la",
+    "model": "GraphWaveNet",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.0003
+    },
+    "validation_mae": 2.870083240168328,
+    "trial": 2,
+    "scope": "best validation MAE among prespecified completed configurations, not a global optimum"
+  },
+  {
+    "dataset": "metr-la",
+    "model": "D2STGNN",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.001
+    },
+    "validation_mae": 2.801513115179612,
+    "trial": 0,
+    "scope": "best validation MAE among prespecified completed configurations, not a global optimum"
+  },
+  {
+    "dataset": "metr-la",
+    "model": "STAEformer",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.0003
+    },
+    "validation_mae": 2.8471198198530727,
+    "trial": 1,
+    "scope": "best validation MAE among prespecified completed configurations, not a global optimum"
+  }
+]

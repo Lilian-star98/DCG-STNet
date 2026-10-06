@@ -1,0 +1,49 @@
+{
+  "model": "STCausalNet",
+  "seed": 2,
+  "phase": "final",
+  "settings": {
+    "max_epochs": 100,
+    "patience": 15,
+    "batch_size": 8,
+    "threads": 4,
+    "history": 12,
+    "horizon": 12,
+    "weight_decay": 0.0001,
+    "hidden": 64,
+    "lr": 0.001
+  },
+  "validation_mae": 3.1138192535873364,
+  "epochs": 60,
+  "best_epoch": 45,
+  "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+  "stopped_by": "early_stopping",
+  "test_evaluated": true,
+  "physics_calibrated": false,
+  "test": {
+    "15": {
+      "count": 1242568,
+      "MAE": 2.939754441422761,
+      "RMSE": 5.71285466646718,
+      "MAPE_percent": 7.900461965753686
+    },
+    "30": {
+      "count": 1242550,
+      "MAE": 3.413263849928837,
+      "RMSE": 6.896659860578026,
+      "MAPE_percent": 9.844508861883982
+    },
+    "60": {
+      "count": 1242514,
+      "MAE": 3.952493997401037,
+      "RMSE": 8.036491383322135,
+      "MAPE_percent": 11.862911479105172
+    }
+  },
+  "test_all_horizons": {
+    "count": 14910564,
+    "MAE": 3.3643488096022813,
+    "RMSE": 6.796949576650385,
+    "MAPE_percent": 9.622950622386048
+  }
+}

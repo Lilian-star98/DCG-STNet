@@ -1,0 +1,50 @@
+{
+  "name": "E5_guided",
+  "seed": 3,
+  "dt_sec": 30,
+  "steps": 72,
+  "spec": {
+    "kind": "school",
+    "nodes": [
+      3
+    ],
+    "t_start": 12,
+    "t_peak": 24,
+    "t_end": 48,
+    "beta": 0.15,
+    "region_ratio": 1.0,
+    "extra": {
+      "inflow_surge": 1.15
+    }
+  },
+  "checks": {
+    "factual": {
+      "finite": true,
+      "max_local_conservation_error_veh": 1.4210854715202004e-14,
+      "max_queue_conservation_error_veh": 5.108760636751697e-16,
+      "max_network_conservation_error_veh": 1.1368683772161603e-13,
+      "density_bounds": true,
+      "speed_bounds": true,
+      "outflow_capacity": true,
+      "fd_consistency": true
+    },
+    "counterfactual": {
+      "finite": true,
+      "max_local_conservation_error_veh": 1.4210854715202004e-14,
+      "max_queue_conservation_error_veh": 4.961309141293668e-16,
+      "max_network_conservation_error_veh": 1.7053025658242404e-13,
+      "density_bounds": true,
+      "speed_bounds": true,
+      "outflow_capacity": true,
+      "fd_consistency": true
+    }
+  },
+  "evidence": "synthetic_CTM_not_trained_model_result",
+  "units": {
+    "speed": "km/h",
+    "flow": "veh/h",
+    "n": "veh",
+    "queue": "veh",
+    "rho": "veh/m/storage_lane"
+  }
+}

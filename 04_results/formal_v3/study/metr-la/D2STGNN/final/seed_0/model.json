@@ -1,0 +1,55 @@
+{
+  "provenance": {
+    "official": {
+      "commit": "82c2d38ba098a6aa87e8099c1ee8da58480692ec",
+      "path": "F:\\动态因果\\third_party\\official\\D2STGNN",
+      "files": {
+        "main.py": "6db61acd59d53a22c904c5bb850f847bd73ba29f67a8c65aa5be9e46a607bd39",
+        "dataloader\\dataloader.py": "ac785aa03d9c1d8f5649de07126eba5523ff09b0ca46bbab04a82d95250d6bd0",
+        "dataloader\\__init__.py": "58d983377b7e8d2a75e78278de414b30a007d8498df1590e4dad7374667a64f8",
+        "models\\losses.py": "9033c93147451ba905e2f049dda84b03c69d38d1bd4c55696f58d9e2baa25c56",
+        "models\\model.py": "f98d8e1f326ac740102a1afc0dd2d4ceab5e8dd3e79f4bb617e9b536cdfcb9ee",
+        "models\\trainer.py": "8cfb3848e7d3fd69d7d4388b161047daee9d936229e1bd4367e51b96329eac8f",
+        "models\\__init__.py": "3545ee97806f705d7355bc6f80a79f52110cc86e89f0b760b2ced59c3fc20a60",
+        "utils\\cal_adj.py": "4e38d51d889ab444984c645c6ec7b1e7f57f3feeacf93cc10bf580de26808142",
+        "utils\\load_data.py": "24091c8c1f78a90556869cce96f0773a74f01dfa9de9833af3f56a3fc58ef129",
+        "utils\\log.py": "344fc78d7afbaec8bf4f19b2ca1715c2cdd314b204d3b469b2ee6a9d4fb349b8",
+        "utils\\train.py": "aada41a72ba040feb2cb90f0e574f5fd8cd65925499148c5f81e150a9885abf8",
+        "utils\\__init__.py": "602aeb38dfd9a91a78992a7ad52b6623062d7e173f0b12326015140ddd5cfe9c",
+        "datasets\\sensor_graph\\describe_adjs.py": "3090afd2ac7bf899169776927343dcf5bab6b7cd07bd55e5f759cf2d96c7f0c2",
+        "datasets\\raw_data\\METR-LA\\generate_training_data.py": "2d01b2ca092071895e2c9ae2581e4c56626fd85a29aef4976b663d9e3e789b34",
+        "datasets\\raw_data\\PEMS-BAY\\generate_training_data.py": "db1e74f8cb010d11ecc1d6d2b41c7cd64659ec007849a872c7e75993b87a01b0",
+        "datasets\\raw_data\\PEMS04\\generate_adj_mx.py": "aa0fe5ac52eb005da46a32ef53b81fba988a06242ee7a20b9188698cf2c3c60e",
+        "datasets\\raw_data\\PEMS04\\generate_training_data.py": "105068208130572de1677b7174cfdd93b843163a78f7c9677c276c74d1b9f9fe",
+        "datasets\\raw_data\\PEMS08\\generate_adj_mx.py": "1cb84c0c8392ab3a2f37ed90bc209791a5038c236093184058ae29838ba1eaa9",
+        "datasets\\raw_data\\PEMS08\\generate_training_data.py": "ae8f27271c0560401bfdb04793d0b0fdb0b2f39d8469fc88ae5ecc2d3e95bf04",
+        "models\\decouple\\estimation_gate.py": "54dc6e3de98ba59fa20ce20dceced090c8e21137f7c01a37560628ae331f4980",
+        "models\\decouple\\residual_decomp.py": "c313ac712618d1264694fec2e13eaf34f08b21fd8eb82ebcc869dd4551f97009",
+        "models\\diffusion_block\\dif_block.py": "da7034a74870701bd138609e81c5437fec1d9b6388362efd415275117c8b1da8",
+        "models\\diffusion_block\\dif_model.py": "7bf8f2bad3f4977b1a59f064796f3719d270193fc15d0c0678847b2540ae9d56",
+        "models\\diffusion_block\\forecast.py": "f85ffea0d57f1494330940af7c67840e2232ae1a6694d1786829943761b5582e",
+        "models\\diffusion_block\\__init__.py": "087238a22681bc2b0646a0cc7bec4b6a72bc0c448b6f2346c4eff28957c73335",
+        "models\\dynamic_graph_conv\\dy_graph_conv.py": "60415d185d4accb09b515c349703dbc0cf5a4e9e5ea1a20faa51e47bac0ab219",
+        "models\\dynamic_graph_conv\\__init__.py": "2b56418b8030b3492d9fb59e29a32970032e5352c05d54ca2d688217ae390b0b",
+        "models\\inherent_block\\forecast.py": "558e17fe395eb79e7f4c6b80f04f49df865c5ceecc57beb7a91608881bb9012e",
+        "models\\inherent_block\\inh_block.py": "60031fba3d13f8db70d071fe188ba59e974a553def183640d06ff3f13af102c6",
+        "models\\inherent_block\\inh_model.py": "ad3e2b00c97628a9c6776630a7166631a947cdfc4666de5b604cecce7e3415b9",
+        "models\\inherent_block\\__init__.py": "0e6722a874557e449ede7c4d896524d2443d7d0baa5714eb38a605ec2111db09",
+        "models\\dynamic_graph_conv\\utils\\distance.py": "806d2fe1d595007c84bd7f75e9ef93fb11bc6ed65a244398c6d6ba2f07e41d9a",
+        "models\\dynamic_graph_conv\\utils\\mask.py": "1c0cd76ae5b0627c354899a63981a323d9cca9b12af7553087b4ba01cb800f35",
+        "models\\dynamic_graph_conv\\utils\\normalizer.py": "42ae6e9c2b2e72d100de988e1c9e1e0468bf12f2c7512fddd407f8b8187ecce7",
+        "models\\dynamic_graph_conv\\utils\\__init__.py": "57c240d6329abe3797ec4d267cd0e25ebbe7d3f45d330df711c6df4942eeb1bb"
+      }
+    },
+    "compatibility": [],
+    "protocol": "author architecture; unified optimization without author curriculum schedule"
+  },
+  "environment": {
+    "python": "3.12.12 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 20:05:38) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4",
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "parameters": 391962
+}

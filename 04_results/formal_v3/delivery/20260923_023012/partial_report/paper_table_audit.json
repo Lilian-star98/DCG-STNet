@@ -1,0 +1,678 @@
+{
+  "cells": [
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "GraphWaveNet",
+      "metric": "MAE",
+      "reported": 2.97,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "GraphWaveNet",
+      "metric": "RMSE",
+      "reported": 6.91,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "GraphWaveNet",
+      "metric": "MAPE_percent",
+      "reported": 7.3,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "GraphWaveNet",
+      "metric": "MAE",
+      "reported": 1.21,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "GraphWaveNet",
+      "metric": "RMSE",
+      "reported": 2.61,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "GraphWaveNet",
+      "metric": "MAPE_percent",
+      "reported": 2.8,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "D2STGNN",
+      "metric": "MAE",
+      "reported": 2.84,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "D2STGNN",
+      "metric": "RMSE",
+      "reported": 6.25,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "D2STGNN",
+      "metric": "MAPE_percent",
+      "reported": 7.15,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "D2STGNN",
+      "metric": "MAE",
+      "reported": 1.14,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "D2STGNN",
+      "metric": "RMSE",
+      "reported": 2.48,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "D2STGNN",
+      "metric": "MAPE_percent",
+      "reported": 2.65,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "CaST",
+      "metric": "MAE",
+      "reported": 2.82,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "CaST",
+      "metric": "RMSE",
+      "reported": 6.2,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "CaST",
+      "metric": "MAPE_percent",
+      "reported": 7.08,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "CaST",
+      "metric": "MAE",
+      "reported": 1.15,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "CaST",
+      "metric": "RMSE",
+      "reported": 2.5,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "CaST",
+      "metric": "MAPE_percent",
+      "reported": 2.7,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "PDFormer",
+      "metric": "MAE",
+      "reported": 2.76,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "PDFormer",
+      "metric": "RMSE",
+      "reported": 6.12,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "PDFormer",
+      "metric": "MAPE_percent",
+      "reported": 6.95,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "PDFormer",
+      "metric": "MAE",
+      "reported": 1.12,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "PDFormer",
+      "metric": "RMSE",
+      "reported": 2.44,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "PDFormer",
+      "metric": "MAPE_percent",
+      "reported": 2.6,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "STAEformer",
+      "metric": "MAE",
+      "reported": 2.62,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "STAEformer",
+      "metric": "RMSE",
+      "reported": 5.85,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "STAEformer",
+      "metric": "MAPE_percent",
+      "reported": 6.65,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "STAEformer",
+      "metric": "MAE",
+      "reported": 1.08,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "STAEformer",
+      "metric": "RMSE",
+      "reported": 2.35,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "STAEformer",
+      "metric": "MAPE_percent",
+      "reported": 2.48,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "STCausalNet",
+      "metric": "MAE",
+      "reported": 2.72,
+      "computed": 3.9411804372262735,
+      "delta": 1.2211804372262733,
+      "status": "computed_under_documented_unified_protocol",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "STCausalNet",
+      "metric": "RMSE",
+      "reported": 5.98,
+      "computed": 8.005890751254286,
+      "delta": 2.025890751254286,
+      "status": "computed_under_documented_unified_protocol",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "metr-la",
+      "model": "STCausalNet",
+      "metric": "MAPE_percent",
+      "reported": 6.82,
+      "computed": 11.952889278009621,
+      "delta": 5.132889278009621,
+      "status": "computed_under_documented_unified_protocol",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "STCausalNet",
+      "metric": "MAE",
+      "reported": 1.1,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "STCausalNet",
+      "metric": "RMSE",
+      "reported": 2.42,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 1,
+      "dataset": "pems-bay",
+      "model": "STCausalNet",
+      "metric": "MAPE_percent",
+      "reported": 2.58,
+      "computed": null,
+      "delta": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": "table2_event_stratified",
+      "reported_rows": [
+        {
+          "model": "GraphWaveNet",
+          "S1": 2.76,
+          "S2": 4.98,
+          "S3": 3.82,
+          "S4": 3.35
+        },
+        {
+          "model": "D2STGNN",
+          "S1": 2.65,
+          "S2": 4.2,
+          "S3": 3.5,
+          "S4": 3.12
+        },
+        {
+          "model": "STAEformer",
+          "S1": 2.62,
+          "S2": 4.35,
+          "S3": 3.45,
+          "S4": 3.08
+        },
+        {
+          "model": "CaST",
+          "S1": 2.68,
+          "S2": 4.05,
+          "S3": 3.3,
+          "S4": 3.02
+        },
+        {
+          "model": "DCG-STNet",
+          "S1": 2.63,
+          "S2": 3.65,
+          "S3": 3.05,
+          "S4": 2.88
+        }
+      ],
+      "computed": null,
+      "status": "pending_real_event_inputs_or_compatible_ablation_and_counterfactual_runs"
+    },
+    {
+      "table": 3,
+      "dataset": "metr-la",
+      "model": "STCausalNet",
+      "metric": "MAE",
+      "reported": 3.45,
+      "computed": 3.9411804372262735,
+      "status": "computed_forecast_variant_without_physics",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "metr-la",
+      "model": "STCausalNet",
+      "metric": "RMSE",
+      "reported": 7.12,
+      "computed": 8.005890751254286,
+      "status": "computed_forecast_variant_without_physics",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "q",
+      "model": "STCausalNet",
+      "metric": "MAE",
+      "reported": 3.65,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "q",
+      "model": "STCausalNet",
+      "metric": "RMSE",
+      "reported": 7.88,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "metr-la",
+      "model": "STCausalNet:w/o Scene",
+      "metric": "MAE",
+      "reported": 3.52,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "metr-la",
+      "model": "STCausalNet:w/o Scene",
+      "metric": "RMSE",
+      "reported": 7.25,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "q",
+      "model": "STCausalNet:w/o Scene",
+      "metric": "MAE",
+      "reported": 3.98,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "q",
+      "model": "STCausalNet:w/o Scene",
+      "metric": "RMSE",
+      "reported": 8.52,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "metr-la",
+      "model": "STCausalNet:w/o Macro",
+      "metric": "MAE",
+      "reported": 3.55,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "metr-la",
+      "model": "STCausalNet:w/o Macro",
+      "metric": "RMSE",
+      "reported": 7.32,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "q",
+      "model": "STCausalNet:w/o Macro",
+      "metric": "MAE",
+      "reported": 3.82,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "q",
+      "model": "STCausalNet:w/o Macro",
+      "metric": "RMSE",
+      "reported": 8.15,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "metr-la",
+      "model": "STCausalNet:w/o Dynamic",
+      "metric": "MAE",
+      "reported": 3.68,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "metr-la",
+      "model": "STCausalNet:w/o Dynamic",
+      "metric": "RMSE",
+      "reported": 7.55,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "q",
+      "model": "STCausalNet:w/o Dynamic",
+      "metric": "MAE",
+      "reported": 4.1,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "q",
+      "model": "STCausalNet:w/o Dynamic",
+      "metric": "RMSE",
+      "reported": 8.9,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "metr-la",
+      "model": "STCausalNet:w/o Causal-Reg",
+      "metric": "MAE",
+      "reported": 3.42,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "metr-la",
+      "model": "STCausalNet:w/o Causal-Reg",
+      "metric": "RMSE",
+      "reported": 7.08,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "q",
+      "model": "STCausalNet:w/o Causal-Reg",
+      "metric": "MAE",
+      "reported": 3.75,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": 3,
+      "dataset": "q",
+      "model": "STCausalNet:w/o Causal-Reg",
+      "metric": "RMSE",
+      "reported": 8.05,
+      "computed": null,
+      "status": "not_run",
+      "protocol_equivalence_confirmed": false
+    },
+    {
+      "table": "table4_ablation_cf",
+      "reported_rows": [
+        {
+          "variant": "DCG-STNet (full)",
+          "PVR": 0.4,
+          "TED": 1.24,
+          "sparsity": 92.5
+        },
+        {
+          "variant": "w/o Physics",
+          "PVR": 18.7,
+          "TED": 3.56,
+          "sparsity": 92.5
+        },
+        {
+          "variant": "w/o Causal-Reg",
+          "PVR": 0.5,
+          "TED": 4.12,
+          "sparsity": 15.3
+        },
+        {
+          "variant": "w/o Scene",
+          "PVR": 1.2,
+          "TED": 2.89,
+          "sparsity": 88.0
+        }
+      ],
+      "computed": null,
+      "status": "pending_real_event_inputs_or_compatible_ablation_and_counterfactual_runs"
+    }
+  ],
+  "findings": [
+    "Original Table 1 METR-LA full-model MAE=2.72 vs Table 3 full-model MAE=3.45; protocol difference unexplained",
+    "A forecast adapter without calibrated physics cannot substantiate physical or causal superiority",
+    "No claim of superiority is made before complete comparator runs and corrected tests"
+  ]
+}

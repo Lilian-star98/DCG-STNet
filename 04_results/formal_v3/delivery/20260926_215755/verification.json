@@ -1,0 +1,9 @@
+{
+  "archive": "已完成正式测试_增量快照.zip",
+  "archive_sha256": "855eb25bf2da49b8095a5c3261708e31fc738bba10cfaa3d6aeae98ce8768207",
+  "verified_entries": 57,
+  "completed_final_runs": 10,
+  "partial_study": true,
+  "complete_paper_reproduction": false,
+  "frozen_source_verified": true
+}

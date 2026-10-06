@@ -1,0 +1,248 @@
+{
+  "captured_at": "2026-10-04T10:30:13.555192+08:00",
+  "coordinator_status": {
+    "state": "running",
+    "phase": "search",
+    "dataset": "metr-la",
+    "model": "CaST",
+    "trial": 0,
+    "started": 1790993830.6568358
+  },
+  "frozen_source_verified": true,
+  "config_sha256": "c3ce7c09629a596b6705a9cdd3d60bc5d91e16b7a63689b84d70ed3cc74f5e23",
+  "runs": [
+    {
+      "run": "metr-la/CaST/search/trial_0",
+      "completed_epochs": 15,
+      "best_validation_mae": 7.15456083508647,
+      "best_epoch": 11,
+      "completed": false
+    },
+    {
+      "run": "metr-la/D2STGNN/final/seed_0",
+      "completed_epochs": 70,
+      "best_validation_mae": 2.806366194185102,
+      "best_epoch": 55,
+      "completed": true
+    },
+    {
+      "run": "metr-la/D2STGNN/final/seed_1",
+      "completed_epochs": 58,
+      "best_validation_mae": 2.7991821842110447,
+      "best_epoch": 43,
+      "completed": true
+    },
+    {
+      "run": "metr-la/D2STGNN/final/seed_2",
+      "completed_epochs": 50,
+      "best_validation_mae": 2.787246534089138,
+      "best_epoch": 35,
+      "completed": true
+    },
+    {
+      "run": "metr-la/D2STGNN/final/seed_3",
+      "completed_epochs": 38,
+      "best_validation_mae": 2.8012390980560617,
+      "best_epoch": 23,
+      "completed": true
+    },
+    {
+      "run": "metr-la/D2STGNN/final/seed_4",
+      "completed_epochs": 37,
+      "best_validation_mae": 2.79424479894774,
+      "best_epoch": 22,
+      "completed": true
+    },
+    {
+      "run": "metr-la/D2STGNN/search/trial_0",
+      "completed_epochs": 55,
+      "best_validation_mae": 2.801513115179612,
+      "best_epoch": 40,
+      "completed": true
+    },
+    {
+      "run": "metr-la/D2STGNN/search/trial_1",
+      "completed_epochs": 42,
+      "best_validation_mae": 2.8064494869265277,
+      "best_epoch": 27,
+      "completed": true
+    },
+    {
+      "run": "metr-la/D2STGNN/search/trial_2",
+      "completed_epochs": 67,
+      "best_validation_mae": 2.8027438282067076,
+      "best_epoch": 52,
+      "completed": true
+    },
+    {
+      "run": "metr-la/GraphWaveNet/final/seed_0",
+      "completed_epochs": 49,
+      "best_validation_mae": 2.887165931172997,
+      "best_epoch": 34,
+      "completed": true
+    },
+    {
+      "run": "metr-la/GraphWaveNet/final/seed_1",
+      "completed_epochs": 67,
+      "best_validation_mae": 2.879660883707259,
+      "best_epoch": 52,
+      "completed": true
+    },
+    {
+      "run": "metr-la/GraphWaveNet/final/seed_2",
+      "completed_epochs": 58,
+      "best_validation_mae": 2.8844608691960314,
+      "best_epoch": 43,
+      "completed": true
+    },
+    {
+      "run": "metr-la/GraphWaveNet/final/seed_3",
+      "completed_epochs": 66,
+      "best_validation_mae": 2.8742717860226974,
+      "best_epoch": 51,
+      "completed": true
+    },
+    {
+      "run": "metr-la/GraphWaveNet/final/seed_4",
+      "completed_epochs": 67,
+      "best_validation_mae": 2.87804342919779,
+      "best_epoch": 52,
+      "completed": true
+    },
+    {
+      "run": "metr-la/GraphWaveNet/search/trial_0",
+      "completed_epochs": 47,
+      "best_validation_mae": 2.8996102627946683,
+      "best_epoch": 32,
+      "completed": true
+    },
+    {
+      "run": "metr-la/GraphWaveNet/search/trial_1",
+      "completed_epochs": 58,
+      "best_validation_mae": 2.87699401416508,
+      "best_epoch": 43,
+      "completed": true
+    },
+    {
+      "run": "metr-la/GraphWaveNet/search/trial_2",
+      "completed_epochs": 67,
+      "best_validation_mae": 2.870083240168328,
+      "best_epoch": 52,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STAEformer/final/seed_0",
+      "completed_epochs": 33,
+      "best_validation_mae": 2.841910529600867,
+      "best_epoch": 18,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STAEformer/final/seed_1",
+      "completed_epochs": 34,
+      "best_validation_mae": 2.8492521847162515,
+      "best_epoch": 19,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STAEformer/final/seed_2",
+      "completed_epochs": 31,
+      "best_validation_mae": 2.848883025633953,
+      "best_epoch": 16,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STAEformer/final/seed_3",
+      "completed_epochs": 37,
+      "best_validation_mae": 2.845105585221263,
+      "best_epoch": 22,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STAEformer/final/seed_4",
+      "completed_epochs": 32,
+      "best_validation_mae": 2.853240694843624,
+      "best_epoch": 17,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STAEformer/search/trial_0",
+      "completed_epochs": 34,
+      "best_validation_mae": 2.852906705754699,
+      "best_epoch": 19,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STAEformer/search/trial_1",
+      "completed_epochs": 34,
+      "best_validation_mae": 2.8471198198530727,
+      "best_epoch": 19,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STAEformer/search/trial_2",
+      "completed_epochs": 46,
+      "best_validation_mae": 2.8481136069079995,
+      "best_epoch": 31,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STCausalNet/final/seed_0",
+      "completed_epochs": 60,
+      "best_validation_mae": 3.1039322211419678,
+      "best_epoch": 45,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STCausalNet/final/seed_1",
+      "completed_epochs": 54,
+      "best_validation_mae": 3.1101622911851288,
+      "best_epoch": 39,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STCausalNet/final/seed_2",
+      "completed_epochs": 60,
+      "best_validation_mae": 3.1138192535873364,
+      "best_epoch": 45,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STCausalNet/final/seed_3",
+      "completed_epochs": 57,
+      "best_validation_mae": 3.1034178049517407,
+      "best_epoch": 42,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STCausalNet/final/seed_4",
+      "completed_epochs": 58,
+      "best_validation_mae": 3.110676539136204,
+      "best_epoch": 43,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STCausalNet/search/trial_0",
+      "completed_epochs": 78,
+      "best_validation_mae": 3.136995046857717,
+      "best_epoch": 63,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STCausalNet/search/trial_1",
+      "completed_epochs": 64,
+      "best_validation_mae": 3.1127217236801727,
+      "best_epoch": 49,
+      "completed": true
+    },
+    {
+      "run": "metr-la/STCausalNet/search/trial_2",
+      "completed_epochs": 78,
+      "best_validation_mae": 3.153809909874513,
+      "best_epoch": 63,
+      "completed": true
+    }
+  ],
+  "disk_free_gib": 13.76,
+  "note": "Files are individually captured during live training, not a simultaneous checkpoint; no weights included."
+}

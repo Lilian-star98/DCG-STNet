@@ -1,0 +1,12 @@
+{
+  "resumed_pid": 14608,
+  "config_hash_verified": true,
+  "previous_coordinator_absent": true,
+  "residual_python_processes_found": false,
+  "frozen_training_source_modified": false,
+  "checked_at": "2026-10-03T10:17:33.6567734+08:00",
+  "observed_epoch_seconds": "8876-8997",
+  "checkpoint_completed_epochs": 6,
+  "source_hash_verified": true,
+  "interruption_cause": "Not identified; coordinator error log empty"
+}

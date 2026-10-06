@@ -1,0 +1,12 @@
+{
+  "status": "specification_only_no_fabricated_observations",
+  "Q_raw_speed": ["original road ID", "timestamp and time zone", "speed and unit", "original missing/quality flags", "raw file provenance"],
+  "Q_measured_flow": ["road/sensor ID mapping", "count", "interval start/end", "lane coverage", "vehicle-class scope", "quality flags", "source"],
+  "calibration_npz": {"density":"T,N veh/m/lane independently observed","flow":"T,N veh/h measured","lanes":"N","dates":"T YYYY-MM-DD","road_ids":"N ordered strings"},
+  "calibration_metadata": ["flow_provenance=measured", "density_provenance=measured", "flow_source", "density_source", "road_geometry_source", "road_ids", "units", "split_dates.train/validation/test", "bounds.lower/upper for v_free,w_cong,rho_jam in SI", "bootstrap_replicates"],
+  "network_episode_npz": {"turning":"N,N observed fractions, row sum <=1","length":"N meters","lanes":"N","demand":"T,N veh/h external arrivals including unmet demand","initial_n":"N vehicles","initial_queue":"N vehicles","speed_mps":"T,N end-state speed","outflow_veh_h":"T,N interval-average actual flux","road_ids":"N ordered strings"},
+  "network_episode_metadata": ["turn_counts_source", "boundary_arrivals_source", "initial_state_source", "speed_source", "flow_source", "episode_date", "episode_id", "dt_sec"],
+  "event_npz": {"treated":"E,T observed outcome","controls":"E,T,K donor outcomes","timestamps":"E,T datetime64, same explicit time zone","pre":"E,T boolean","post":"E,T boolean","model_counterfactual":"E,T optional frozen model predictions"},
+  "event_metadata": ["training_event_ids", "test_event_ids", "events with event_id/source/announcement_time/start_time/end_time/treated_road_ids/donor_road_ids/donor_exclusion_rationale/independent_cluster_id"],
+  "warning": "A fitted observational reference is not ground-truth counterfactual. Speed-only fits cannot identify all CTM parameters. Occupancy requires calibrated effective vehicle/detector lengths before conversion to density."
+}

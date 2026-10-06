@@ -1,0 +1,920 @@
+[
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_0",
+    "model": "STCausalNet",
+    "seed": 0,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 64,
+      "lr": 0.001
+    },
+    "validation_mae": 3.1039322211419678,
+    "epochs": 60,
+    "best_epoch": 45,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.9329738593228964,
+        "RMSE": 5.679609405102623,
+        "MAPE_percent": 8.024153480706355
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.4006293136213133,
+        "RMSE": 6.851504977227777,
+        "MAPE_percent": 10.098999775012581
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.9298918918522903,
+        "RMSE": 7.990585499036324,
+        "MAPE_percent": 12.160673024673823
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 3.3506107728890764,
+      "RMSE": 6.7685477331152795,
+      "MAPE_percent": 9.840185714214268
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_1",
+    "model": "STCausalNet",
+    "seed": 1,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 64,
+      "lr": 0.001
+    },
+    "validation_mae": 3.1101622911851288,
+    "epochs": 54,
+    "best_epoch": 39,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.9307547926863147,
+        "RMSE": 5.677577689872983,
+        "MAPE_percent": 7.89229478815525
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.3930430887922243,
+        "RMSE": 6.815203549816284,
+        "MAPE_percent": 9.775234513724646
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.9411554224254925,
+        "RMSE": 7.990595371404404,
+        "MAPE_percent": 11.835083330249866
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 3.3521275649994404,
+      "RMSE": 6.73689962701276,
+      "MAPE_percent": 9.599449538521547
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_2",
+    "model": "STCausalNet",
+    "seed": 2,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 64,
+      "lr": 0.001
+    },
+    "validation_mae": 3.1138192535873364,
+    "epochs": 60,
+    "best_epoch": 45,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.939754441422761,
+        "RMSE": 5.71285466646718,
+        "MAPE_percent": 7.900461965753686
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.413263849928837,
+        "RMSE": 6.896659860578026,
+        "MAPE_percent": 9.844508861883982
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.952493997401037,
+        "RMSE": 8.036491383322135,
+        "MAPE_percent": 11.862911479105172
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 3.3643488096022813,
+      "RMSE": 6.796949576650385,
+      "MAPE_percent": 9.622950622386048
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_3",
+    "model": "STCausalNet",
+    "seed": 3,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 64,
+      "lr": 0.001
+    },
+    "validation_mae": 3.1034178049517407,
+    "epochs": 57,
+    "best_epoch": 42,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.9327171968024173,
+        "RMSE": 5.685000500017399,
+        "MAPE_percent": 7.909455304551822
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.3883815040100913,
+        "RMSE": 6.823749754582201,
+        "MAPE_percent": 9.785386795034803
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.9173373336430632,
+        "RMSE": 7.9476272227334555,
+        "MAPE_percent": 11.842747987255347
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 3.341618721955045,
+      "RMSE": 6.735768391588711,
+      "MAPE_percent": 9.607820159455589
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_4",
+    "model": "STCausalNet",
+    "seed": 4,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 64,
+      "lr": 0.001
+    },
+    "validation_mae": 3.110676539136204,
+    "epochs": 58,
+    "best_epoch": 43,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.927550776829187,
+        "RMSE": 5.661962938215364,
+        "MAPE_percent": 7.8478923224449995
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.380854462494836,
+        "RMSE": 6.761791493106655,
+        "MAPE_percent": 9.655596942431888
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.9350763433065916,
+        "RMSE": 7.902300203443714,
+        "MAPE_percent": 11.72220430103902
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 3.342276991316584,
+      "RMSE": 6.690559343402795,
+      "MAPE_percent": 9.504749368723585
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_0",
+    "model": "GraphWaveNet",
+    "seed": 0,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.0003
+    },
+    "validation_mae": 2.887165931172997,
+    "epochs": 49,
+    "best_epoch": 34,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.7265644689385673,
+        "RMSE": 5.210356644226371,
+        "MAPE_percent": 7.163927218942982
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.108818684016995,
+        "RMSE": 6.223599166969327,
+        "MAPE_percent": 8.67538197411272
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.551391623958579,
+        "RMSE": 7.304749820159003,
+        "MAPE_percent": 10.501505951286205
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 3.070104668277916,
+      "RMSE": 6.17820907544864,
+      "MAPE_percent": 8.558798353286301
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_1",
+    "model": "GraphWaveNet",
+    "seed": 1,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.0003
+    },
+    "validation_mae": 2.879660883707259,
+    "epochs": 67,
+    "best_epoch": 52,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.722219275210033,
+        "RMSE": 5.215135867169458,
+        "MAPE_percent": 7.07150335279004
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.113956481147727,
+        "RMSE": 6.249392885382015,
+        "MAPE_percent": 8.653760812388873
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.551360588629018,
+        "RMSE": 7.316792728633085,
+        "MAPE_percent": 10.407406109779346
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 3.0688773823772197,
+      "RMSE": 6.1919437508741835,
+      "MAPE_percent": 8.487872380212117
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_2",
+    "model": "GraphWaveNet",
+    "seed": 2,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.0003
+    },
+    "validation_mae": 2.8844608691960314,
+    "epochs": 58,
+    "best_epoch": 43,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.7324057180928327,
+        "RMSE": 5.248564295159314,
+        "MAPE_percent": 7.264211892653795
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.116958361128428,
+        "RMSE": 6.287400559751546,
+        "MAPE_percent": 8.904806687000356
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.5496625000690853,
+        "RMSE": 7.364360981176828,
+        "MAPE_percent": 10.622324515548948
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 3.07431368455647,
+      "RMSE": 6.2342555622216365,
+      "MAPE_percent": 8.72058024589299
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_3",
+    "model": "GraphWaveNet",
+    "seed": 3,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.0003
+    },
+    "validation_mae": 2.8742717860226974,
+    "epochs": 66,
+    "best_epoch": 51,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.720918194315708,
+        "RMSE": 5.211389294274225,
+        "MAPE_percent": 7.133969443478935
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.1099132447890616,
+        "RMSE": 6.262432497820012,
+        "MAPE_percent": 8.64010105823773
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.540402454973035,
+        "RMSE": 7.339361645950714,
+        "MAPE_percent": 10.274410460915112
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 3.065095982603082,
+      "RMSE": 6.205119370824491,
+      "MAPE_percent": 8.479746603632574
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_4",
+    "model": "GraphWaveNet",
+    "seed": 4,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.0003
+    },
+    "validation_mae": 2.87804342919779,
+    "epochs": 67,
+    "best_epoch": 52,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.711473010532594,
+        "RMSE": 5.189521570140677,
+        "MAPE_percent": 7.064854016846754
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.0963819538105,
+        "RMSE": 6.204586328037897,
+        "MAPE_percent": 8.579936396606122
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.5393248168138314,
+        "RMSE": 7.2687396739434496,
+        "MAPE_percent": 10.310687732578359
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 3.057040756541204,
+      "RMSE": 6.15810468934762,
+      "MAPE_percent": 8.445210752625771
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\D2STGNN\\final\\seed_0",
+    "model": "D2STGNN",
+    "seed": 0,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.001
+    },
+    "validation_mae": 2.806366194185102,
+    "epochs": 70,
+    "best_epoch": 55,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.6639035798233612,
+        "RMSE": 5.072305619091496,
+        "MAPE_percent": 6.799516615481971
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.021562225968155,
+        "RMSE": 6.12349965164772,
+        "MAPE_percent": 8.120381572436742
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.4637604996125684,
+        "RMSE": 7.276038365279,
+        "MAPE_percent": 9.975370228077976
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 2.996062737519748,
+      "RMSE": 6.106415283921549,
+      "MAPE_percent": 8.101505221722928
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\D2STGNN\\final\\seed_1",
+    "model": "D2STGNN",
+    "seed": 1,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.001
+    },
+    "validation_mae": 2.7991821842110447,
+    "epochs": 58,
+    "best_epoch": 43,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.669309248085657,
+        "RMSE": 5.083206666668309,
+        "MAPE_percent": 6.8326727116416714
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.021118718354612,
+        "RMSE": 6.1075566853332415,
+        "MAPE_percent": 8.273743478162611
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.4583203951608854,
+        "RMSE": 7.268761150783589,
+        "MAPE_percent": 10.266442045059302
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 2.9941726970857405,
+      "RMSE": 6.09532608994349,
+      "MAPE_percent": 8.25661440525666
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\D2STGNN\\final\\seed_2",
+    "model": "D2STGNN",
+    "seed": 2,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.001
+    },
+    "validation_mae": 2.787246534089138,
+    "epochs": 50,
+    "best_epoch": 35,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.6530508323659645,
+        "RMSE": 5.06297957633855,
+        "MAPE_percent": 6.776931692461561
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 2.9956563029556054,
+        "RMSE": 6.058156094806682,
+        "MAPE_percent": 8.239050271735525
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.4277985456609885,
+        "RMSE": 7.180680823763676,
+        "MAPE_percent": 10.082732052600264
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 2.968459788102717,
+      "RMSE": 6.037711337678995,
+      "MAPE_percent": 8.16758668845085
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\D2STGNN\\final\\seed_3",
+    "model": "D2STGNN",
+    "seed": 3,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.001
+    },
+    "validation_mae": 2.8012390980560617,
+    "epochs": 38,
+    "best_epoch": 23,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.6736736761284114,
+        "RMSE": 5.071725076667529,
+        "MAPE_percent": 6.814697597753487
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.0269537388057106,
+        "RMSE": 6.085352398216307,
+        "MAPE_percent": 8.21225198855154
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.456890768352,
+        "RMSE": 7.210795963454374,
+        "MAPE_percent": 9.96259436295514
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 2.9932545292602772,
+      "RMSE": 6.0588179363719785,
+      "MAPE_percent": 8.133102225634204
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\D2STGNN\\final\\seed_4",
+    "model": "D2STGNN",
+    "seed": 4,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.001
+    },
+    "validation_mae": 2.79424479894774,
+    "epochs": 37,
+    "best_epoch": 22,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.661826229157924,
+        "RMSE": 5.073070410072077,
+        "MAPE_percent": 6.854579605408788
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 2.9982492639803944,
+        "RMSE": 6.041232085821511,
+        "MAPE_percent": 8.31722801839949
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.4166540611615583,
+        "RMSE": 7.1206447387367255,
+        "MAPE_percent": 10.04303877178128
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 2.966593988400462,
+      "RMSE": 6.005598716120004,
+      "MAPE_percent": 8.1752380237384
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STAEformer\\final\\seed_0",
+    "model": "STAEformer",
+    "seed": 0,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.0003
+    },
+    "validation_mae": 2.841910529600867,
+    "epochs": 33,
+    "best_epoch": 18,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.724324342231771,
+        "RMSE": 5.243497332172871,
+        "MAPE_percent": 7.273104482091811
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.0583000552967987,
+        "RMSE": 6.203190319494114,
+        "MAPE_percent": 8.576863530845667
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.4463719465002027,
+        "RMSE": 7.1999020568339915,
+        "MAPE_percent": 10.064514993142627
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 3.0234885005526815,
+      "RMSE": 6.151037329577772,
+      "MAPE_percent": 8.414066262260857
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STAEformer\\final\\seed_1",
+    "model": "STAEformer",
+    "seed": 1,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.0003
+    },
+    "validation_mae": 2.8492521847162515,
+    "epochs": 34,
+    "best_epoch": 19,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.7092340749151838,
+        "RMSE": 5.1926931914503545,
+        "MAPE_percent": 7.033373840613051
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.041549817854804,
+        "RMSE": 6.151620799208668,
+        "MAPE_percent": 8.367037057723389
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.463933815086557,
+        "RMSE": 7.263460420479349,
+        "MAPE_percent": 10.264121010815517
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 3.0165442337814725,
+      "RMSE": 6.130756349679143,
+      "MAPE_percent": 8.34880880467599
+    }
+  },
+  {
+    "dataset": "metr-la",
+    "path": "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STAEformer\\final\\seed_2",
+    "model": "STAEformer",
+    "seed": 2,
+    "phase": "final",
+    "settings": {
+      "max_epochs": 100,
+      "patience": 15,
+      "batch_size": 8,
+      "threads": 4,
+      "history": 12,
+      "horizon": 12,
+      "weight_decay": 0.0001,
+      "hidden": 32,
+      "lr": 0.0003
+    },
+    "validation_mae": 2.848883025633953,
+    "epochs": 31,
+    "best_epoch": 16,
+    "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+    "stopped_by": "early_stopping",
+    "test_evaluated": true,
+    "physics_calibrated": false,
+    "test": {
+      "15": {
+        "count": 1242568,
+        "MAE": 2.736426365186013,
+        "RMSE": 5.23971115264031,
+        "MAPE_percent": 7.347272081627423
+      },
+      "30": {
+        "count": 1242550,
+        "MAE": 3.065445288786883,
+        "RMSE": 6.177524027072319,
+        "MAPE_percent": 8.672359549288464
+      },
+      "60": {
+        "count": 1242514,
+        "MAE": 3.457547151782549,
+        "RMSE": 7.195154524491993,
+        "MAPE_percent": 10.24820197176339
+      }
+    },
+    "test_all_horizons": {
+      "count": 14910564,
+      "MAE": 3.0313189128489504,
+      "RMSE": 6.127555676924052,
+      "MAPE_percent": 8.538288268878915
+    }
+  }
+]

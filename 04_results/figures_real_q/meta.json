@@ -1,0 +1,14 @@
+{
+  "real_q": true,
+  "max_nodes": 2000,
+  "paths": {
+    "fig1": "out/paper/figures_real_q\\fig1_local_flow.png",
+    "fig2": "out/paper/figures_real_q\\fig2_lane_narrowing.png",
+    "fig3": "out/paper/figures_real_q\\fig3_rainfall_speed.png",
+    "fig4": "out/paper/figures_real_q\\fig4_weather_topology.png",
+    "fig5": "out/paper/figures_real_q\\fig5_school_hotspot.png",
+    "fig6": "out/paper/figures_real_q\\fig6_micro_state.png",
+    "fig7": "out/paper/figures_real_q\\fig7_ripple_effect.png",
+    "fig8": "out/paper/figures_real_q\\fig8_subnet_topology.png"
+  }
+}

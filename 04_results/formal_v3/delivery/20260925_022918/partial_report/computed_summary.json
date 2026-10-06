@@ -1,0 +1,362 @@
+[
+  {
+    "dataset": "metr-la",
+    "model": "GraphWaveNet",
+    "horizon_minutes": 15,
+    "metric": "MAE",
+    "mean": 2.7270631540804775,
+    "std": 0.005111498782569283,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_2"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "GraphWaveNet",
+    "horizon_minutes": 15,
+    "metric": "RMSE",
+    "mean": 5.224685602185048,
+    "std": 0.02081716182875051,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_2"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "GraphWaveNet",
+    "horizon_minutes": 15,
+    "metric": "MAPE_percent",
+    "mean": 7.166547488128939,
+    "std": 0.09638098719177077,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_2"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "GraphWaveNet",
+    "horizon_minutes": 30,
+    "metric": "MAE",
+    "mean": 3.113244508764383,
+    "std": 0.004116280405363535,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_2"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "GraphWaveNet",
+    "horizon_minutes": 30,
+    "metric": "RMSE",
+    "mean": 6.253464204034297,
+    "std": 0.03209495531877331,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_2"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "GraphWaveNet",
+    "horizon_minutes": 30,
+    "metric": "MAPE_percent",
+    "mean": 8.74464982450065,
+    "std": 0.13912057401004582,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_2"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "GraphWaveNet",
+    "horizon_minutes": 60,
+    "metric": "MAE",
+    "mean": 3.5508049042188943,
+    "std": 0.0009894727025266986,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_2"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "GraphWaveNet",
+    "horizon_minutes": 60,
+    "metric": "RMSE",
+    "mean": 7.328634509989638,
+    "std": 0.03152052456329984,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_2"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "GraphWaveNet",
+    "horizon_minutes": 60,
+    "metric": "MAPE_percent",
+    "mean": 10.510412192204832,
+    "std": 0.10773565394108069,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\GraphWaveNet\\final\\seed_2"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "STCausalNet",
+    "horizon_minutes": 15,
+    "metric": "MAE",
+    "mean": 2.932750213412715,
+    "std": 0.004475660908399206,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_2",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_3",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_4"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "STCausalNet",
+    "horizon_minutes": 15,
+    "metric": "RMSE",
+    "mean": 5.68340103993511,
+    "std": 0.018560404726464655,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_2",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_3",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_4"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "STCausalNet",
+    "horizon_minutes": 15,
+    "metric": "MAPE_percent",
+    "mean": 7.914851572322422,
+    "std": 0.06552754633651438,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_2",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_3",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_4"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "STCausalNet",
+    "horizon_minutes": 30,
+    "metric": "MAE",
+    "mean": 3.3952344437694606,
+    "std": 0.012376517973753139,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_2",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_3",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_4"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "STCausalNet",
+    "horizon_minutes": 30,
+    "metric": "RMSE",
+    "mean": 6.8297819270621885,
+    "std": 0.049538278626884875,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_2",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_3",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_4"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "STCausalNet",
+    "horizon_minutes": 30,
+    "metric": "MAPE_percent",
+    "mean": 9.831945377617581,
+    "std": 0.16428518389751529,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_2",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_3",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_4"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "STCausalNet",
+    "horizon_minutes": 60,
+    "metric": "MAE",
+    "mean": 3.9351909977256954,
+    "std": 0.01305579516568471,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_2",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_3",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_4"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "STCausalNet",
+    "horizon_minutes": 60,
+    "metric": "RMSE",
+    "mean": 7.973519935988006,
+    "std": 0.05072201203504631,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_2",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_3",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_4"
+    ]
+  },
+  {
+    "dataset": "metr-la",
+    "model": "STCausalNet",
+    "horizon_minutes": 60,
+    "metric": "MAPE_percent",
+    "mean": 11.884724024464647,
+    "std": 0.16375475914898438,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "runs": [
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_0",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_1",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_2",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_3",
+      "F:\\动态因果\\results\\formal_v3\\study\\metr-la\\STCausalNet\\final\\seed_4"
+    ]
+  }
+]

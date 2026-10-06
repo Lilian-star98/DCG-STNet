@@ -1,0 +1,9 @@
+## Q-Traffic event-stratified MAE (speed) and PDR vs S1 (paper-reported)
+
+| Model | S1 Normal | S2 Accident (PDR) | S3 Weather (PDR) | S4 Holiday (PDR) |
+| --- | --- | --- | --- | --- |
+| GraphWaveNet | 2.76 | 4.98 (+80.4%) | 3.82 (+38.4%) | 3.35 (+21.4%) |
+| D2STGNN | 2.65 | 4.20 (+58.5%) | 3.50 (+32.1%) | 3.12 (+17.7%) |
+| STAEformer | 2.62 | 4.35 (+66.0%) | 3.45 (+31.7%) | 3.08 (+17.6%) |
+| CaST | 2.68 | 4.05 (+51.1%) | 3.30 (+23.1%) | 3.02 (+12.7%) |
+| DCG-STNet | 2.63 | 3.65 (+38.8%) | 3.05 (+16.0%) | 2.88 (+9.5%) |

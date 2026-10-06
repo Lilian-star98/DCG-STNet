@@ -1,0 +1,18 @@
+{
+  "purpose": "Real-speed unified-protocol benchmark; this is not complete-paper reproduction",
+  "datasets": ["metr-la", "pems-bay"],
+  "search_seed": 17,
+  "final_seeds": [0, 1, 2, 3, 4],
+  "prediction_ablations": ["w/o Scene", "w/o Macro", "w/o Dynamic", "w/o Causal-Reg"],
+  "training": {"max_epochs": 100, "patience": 15, "batch_size": 8, "threads": 4, "history": 12, "horizon": 12, "weight_decay": 0.0001},
+  "models": {
+    "STCausalNet": [{"hidden":32,"lr":0.001},{"hidden":64,"lr":0.001},{"hidden":32,"lr":0.0003}],
+    "GraphWaveNet": [{"hidden":32,"lr":0.001},{"hidden":64,"lr":0.001},{"hidden":32,"lr":0.0003}],
+    "D2STGNN": [{"hidden":32,"lr":0.001},{"hidden":64,"lr":0.001},{"hidden":32,"lr":0.0003}],
+    "STAEformer": [{"hidden":32,"lr":0.001},{"hidden":32,"lr":0.0003},{"hidden":32,"lr":0.0001}],
+    "CaST": [{"hidden":16,"lr":0.001},{"hidden":32,"lr":0.001},{"hidden":16,"lr":0.0003}],
+    "PDFormer": [{"hidden":32,"lr":0.001},{"hidden":32,"lr":0.0003},{"hidden":32,"lr":0.0001}]
+  },
+  "selection": "Full validation split MAE averaged over all 12 horizons; search never scores test targets",
+  "not_available_yet": ["Official-protocol published-score reproduction", "Q measured flow and original missing mask", "calibrated real CTM episodes", "independent real intervention evidence"]
+}

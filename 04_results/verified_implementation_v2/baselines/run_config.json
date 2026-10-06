@@ -1,0 +1,35 @@
+{
+  "data": "F:\\\u52a8\u6001\u56e0\u679c\\results\\implementation_v2\\forecast_fixture.npz",
+  "out": "F:\\\u52a8\u6001\u56e0\u679c\\results\\verified_implementation_v2\\baselines",
+  "dataset": "synthetic",
+  "sample_minutes": 5,
+  "history_minutes": 60,
+  "forecast_minutes": [
+    15,
+    30,
+    60
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "variants": [
+    "HA",
+    "GraphWaveNet",
+    "D2STGNN",
+    "CaST",
+    "PDFormer",
+    "STAEformer"
+  ],
+  "epochs": 1,
+  "patience": 10,
+  "batch_size": 32,
+  "hidden": 8,
+  "lr": 0.001,
+  "device": "cpu",
+  "threads": 1,
+  "adjacency_convention": "source_to_destination"
+}

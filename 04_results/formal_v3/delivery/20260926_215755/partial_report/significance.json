@@ -1,0 +1,50 @@
+[
+  {
+    "dataset": "metr-la",
+    "horizon_minutes": 15,
+    "reference": "GraphWaveNet",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "improvement_percent": -7.714138004210628,
+    "p_value": 2.984114710629899e-08,
+    "BH_q": 8.952344131889696e-08,
+    "supports_lower_MAE": false
+  },
+  {
+    "dataset": "metr-la",
+    "horizon_minutes": 30,
+    "reference": "GraphWaveNet",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "improvement_percent": -9.199413684760588,
+    "p_value": 1.363857356971244e-07,
+    "BH_q": 1.5946736694163233e-07,
+    "supports_lower_MAE": false
+  },
+  {
+    "dataset": "metr-la",
+    "horizon_minutes": 60,
+    "reference": "GraphWaveNet",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "improvement_percent": -10.96208797499049,
+    "p_value": 1.594673669416323e-07,
+    "BH_q": 1.5946736694163233e-07,
+    "supports_lower_MAE": false
+  }
+]

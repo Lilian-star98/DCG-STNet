@@ -1,0 +1,6 @@
+{
+  "epoch": 1,
+  "batch": 2500,
+  "total_batches": 2568,
+  "phase": "search"
+}

@@ -1,0 +1,25 @@
+{
+  "provenance": {
+    "official": {
+      "commit": "fc49d39b2f1a8e3cf37b6289d7240680e1690f3f",
+      "path": "F:\\动态因果\\third_party\\official\\STAEformer",
+      "files": {
+        "lib\\data_prepare.py": "f6c3e94a33638e93f0851b1c0d567f3dc0f3ed720faa57fdc30ab0cc83a45640",
+        "lib\\metrics.py": "9348f2aeea54d28f5b95d905baad3434fa2bda98a8366aff92713bcbc289d05a",
+        "lib\\utils.py": "38dc74a598c28b4d3342ee4adc01f8717417ef9dae0d16b8f38520b05c69b919",
+        "model\\STAEformer.py": "ae50f056b123dd55b312ed408b7981281254cf6cd8799f38baea5dffcfd8da7c",
+        "model\\train.py": "c15cc0027129162eeedb6ba58e21ecf1397dd273c23f2583b11e3629d7cfe2b1"
+      }
+    },
+    "compatibility": [],
+    "protocol": "author architecture/default dimensions; unified split/scaler/training protocol"
+  },
+  "environment": {
+    "python": "3.12.12 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 20:05:38) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4",
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "parameters": 1258980
+}

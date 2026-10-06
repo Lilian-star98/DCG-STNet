@@ -1,0 +1,52 @@
+{
+  "name": "B_signal_short_cycle",
+  "seed": 0,
+  "dt_sec": 30,
+  "steps": 72,
+  "spec": {
+    "kind": "signal_timing",
+    "nodes": [
+      2
+    ],
+    "t_start": 12,
+    "t_peak": 24,
+    "t_end": 48,
+    "beta": 0.5,
+    "region_ratio": 1.0,
+    "extra": {
+      "eta": -0.2,
+      "cycle_sec": 90,
+      "green_ratio": 0.6
+    }
+  },
+  "checks": {
+    "factual": {
+      "finite": true,
+      "max_local_conservation_error_veh": 2.4868995751603507e-14,
+      "max_queue_conservation_error_veh": 8.171241461241152e-14,
+      "max_network_conservation_error_veh": 4.547473508864641e-13,
+      "density_bounds": true,
+      "speed_bounds": true,
+      "outflow_capacity": true,
+      "fd_consistency": true
+    },
+    "counterfactual": {
+      "finite": true,
+      "max_local_conservation_error_veh": 2.6645352591003757e-14,
+      "max_queue_conservation_error_veh": 1.1723955140041653e-13,
+      "max_network_conservation_error_veh": 6.821210263296962e-13,
+      "density_bounds": true,
+      "speed_bounds": true,
+      "outflow_capacity": true,
+      "fd_consistency": true
+    }
+  },
+  "evidence": "synthetic_CTM_not_trained_model_result",
+  "units": {
+    "speed": "km/h",
+    "flow": "veh/h",
+    "n": "veh",
+    "queue": "veh",
+    "rho": "veh/m/storage_lane"
+  }
+}

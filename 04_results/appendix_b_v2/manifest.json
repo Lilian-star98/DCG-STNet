@@ -1,0 +1,535 @@
+{
+  "scenarios": 13,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "runs": 65,
+  "all_physical_checks_passed": true,
+  "network": "synthetic_8_link_corridor_not_Q_Traffic",
+  "results": [
+    {
+      "scenario": "B_accident",
+      "seed": 0,
+      "file": "B_accident\\seed_0\\trajectories.npz",
+      "sha256": "9c0f0bd650076fabd93a9ccc124f771f974fcd2482aa95a770685eb72a77c379",
+      "max_effect": 3526.218995133202,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E3_capacity_drop",
+      "seed": 0,
+      "file": "E3_capacity_drop\\seed_0\\trajectories.npz",
+      "sha256": "1aa0b882f4916ec40971c5ca14702ee1ce9169468d64d91ea31bcb8fc2426845",
+      "max_effect": 4074.5605542891135,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_signal_short_cycle",
+      "seed": 0,
+      "file": "B_signal_short_cycle\\seed_0\\trajectories.npz",
+      "sha256": "9d9abb26306ae755ec5b65e8b29b1009dc68dcbd7acf983e4b7ffedadd5fafa2",
+      "max_effect": 4643.705437441187,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_signal_long_cycle",
+      "seed": 0,
+      "file": "B_signal_long_cycle\\seed_0\\trajectories.npz",
+      "sha256": "26247f541ae98cb897d1aaecb26da42e8897caddd28fe9f372566a502d6df5ab",
+      "max_effect": 4581.495768711123,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_local",
+      "seed": 0,
+      "file": "B_distribution_local\\seed_0\\trajectories.npz",
+      "sha256": "39ef533a24703730c7b41d6c540d52d4a277424e40f5c15ead87037f5f47b9aa",
+      "max_effect": 3510.000000007853,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_regional",
+      "seed": 0,
+      "file": "B_distribution_regional\\seed_0\\trajectories.npz",
+      "sha256": "01825dbc72be7fcab2fc2f185d80c111db7c582cf069a04714c97120526e403e",
+      "max_effect": 4466.578364578277,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_global",
+      "seed": 0,
+      "file": "B_distribution_global\\seed_0\\trajectories.npz",
+      "sha256": "d8e71a952c64e7ad2d34f8d2090adb4f35272a5c25e6d9fdff70809ef4de2762",
+      "max_effect": 4466.578364578277,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_inflow_spike",
+      "seed": 0,
+      "file": "B_inflow_spike\\seed_0\\trajectories.npz",
+      "sha256": "799265c9b92b150b54bf079d16aaeee00bc087a60363ec84288fcc065f1ce784",
+      "max_effect": 1926.009707675902,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E4_rain",
+      "seed": 0,
+      "file": "E4_rain\\seed_0\\trajectories.npz",
+      "sha256": "f05b344aee9a7b6232aa6da499e6b5a227f03574c5d2e52ab68a85db97b51dda",
+      "max_effect": 2680.1740961623864,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E4_snow",
+      "seed": 0,
+      "file": "E4_snow\\seed_0\\trajectories.npz",
+      "sha256": "6187bb003a6b778f7def14317fc0402e5bcb0cfd451e78bdfdf2563934f19408",
+      "max_effect": 3481.044706348567,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_weekend",
+      "seed": 0,
+      "file": "E5_weekend\\seed_0\\trajectories.npz",
+      "sha256": "900dd98ade9dcda3f3cedc594f5fd308877944e55bb0a46afcfc70821a7de70c",
+      "max_effect": 0.0,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_weekday",
+      "seed": 0,
+      "file": "E5_weekday\\seed_0\\trajectories.npz",
+      "sha256": "6af120495e07639f7f8b6fe442b9ffe321cc699ca9729e822d09862be5145de3",
+      "max_effect": 4149.151476041865,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_guided",
+      "seed": 0,
+      "file": "E5_guided\\seed_0\\trajectories.npz",
+      "sha256": "7aa80f5a9c7c76601192a7335c3dcd673517f1a1fa39b13040d34f0593cf9333",
+      "max_effect": 969.6832981123225,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_accident",
+      "seed": 1,
+      "file": "B_accident\\seed_1\\trajectories.npz",
+      "sha256": "5ccd842655d45eaa027e1fe38e2a5c7244dffc5b15d608ae6d9b64fb1b4848ce",
+      "max_effect": 3551.1874663421668,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E3_capacity_drop",
+      "seed": 1,
+      "file": "E3_capacity_drop\\seed_1\\trajectories.npz",
+      "sha256": "60be82b62ab815c51a7c0144e085d602546c6cc8d85eff5cdbce4d1ba0263a95",
+      "max_effect": 4075.1276717409787,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_signal_short_cycle",
+      "seed": 1,
+      "file": "B_signal_short_cycle\\seed_1\\trajectories.npz",
+      "sha256": "ee03be49390ed09402f32057637f63b3a61f0ac8bde08c7a8e56690b82f6b225",
+      "max_effect": 4630.115866095152,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_signal_long_cycle",
+      "seed": 1,
+      "file": "B_signal_long_cycle\\seed_1\\trajectories.npz",
+      "sha256": "e83588fdb77b170ff683ba2e3997e2f1cd949026538a26dea2c129e5087aa67c",
+      "max_effect": 4577.624708410429,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_local",
+      "seed": 1,
+      "file": "B_distribution_local\\seed_1\\trajectories.npz",
+      "sha256": "9455f9096f9335996e7f06ebc45aba7082c6600f62ea73d8baa3e27ea2a505f6",
+      "max_effect": 3510.0000000024656,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_regional",
+      "seed": 1,
+      "file": "B_distribution_regional\\seed_1\\trajectories.npz",
+      "sha256": "54d35373a03d20617ed2a9cae4dbb5041169c02e8f87900d474ec00cbc84b5b8",
+      "max_effect": 4476.473395752771,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_global",
+      "seed": 1,
+      "file": "B_distribution_global\\seed_1\\trajectories.npz",
+      "sha256": "ead75a3a9da404748023ee3659ea4c3d7de44a72b6238b3db9b5de119aac15de",
+      "max_effect": 4476.473395752771,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_inflow_spike",
+      "seed": 1,
+      "file": "B_inflow_spike\\seed_1\\trajectories.npz",
+      "sha256": "f4404a339fd0b7431cc9410da3095ea26950a39b26b21ab62d9b048d5784a176",
+      "max_effect": 1947.1705294324834,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E4_rain",
+      "seed": 1,
+      "file": "E4_rain\\seed_1\\trajectories.npz",
+      "sha256": "67bbbb55232e4e5f33c45e5c99406721fa757ad8acb1ec194e21c09001db5ef3",
+      "max_effect": 2707.704677665133,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E4_snow",
+      "seed": 1,
+      "file": "E4_snow\\seed_1\\trajectories.npz",
+      "sha256": "929f999b22c15c9a8cd548c48e5110bc2953eed260444f62809fc691d0d8e68a",
+      "max_effect": 3506.9581558455834,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_weekend",
+      "seed": 1,
+      "file": "E5_weekend\\seed_1\\trajectories.npz",
+      "sha256": "b1551a0b54be666397b73351ab2ad5c9749ddb4878ddfc1e9479de5d17ae8c83",
+      "max_effect": 0.0,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_weekday",
+      "seed": 1,
+      "file": "E5_weekday\\seed_1\\trajectories.npz",
+      "sha256": "3e9a33ef6c3cb9c931945ffe67a56b65b279efb50a5463349e384dd1bd26268f",
+      "max_effect": 4145.275438675516,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_guided",
+      "seed": 1,
+      "file": "E5_guided\\seed_1\\trajectories.npz",
+      "sha256": "986bc12afd98ff1702a2dfc57265ede674baec788825850725e3fd9320559094",
+      "max_effect": 982.4682958226558,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_accident",
+      "seed": 2,
+      "file": "B_accident\\seed_2\\trajectories.npz",
+      "sha256": "a99fe1ed533e9a4b6bfb140b7de7c40c3c293c1f27acf4771d415c92dd635fb4",
+      "max_effect": 3520.9726448857523,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E3_capacity_drop",
+      "seed": 2,
+      "file": "E3_capacity_drop\\seed_2\\trajectories.npz",
+      "sha256": "70d84e10b7941c52896af01e15eda6feb7d7ec2d8d7e8fd520d9ea6e33b870a5",
+      "max_effect": 4074.8177669048564,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_signal_short_cycle",
+      "seed": 2,
+      "file": "B_signal_short_cycle\\seed_2\\trajectories.npz",
+      "sha256": "ed8e66d642d73af5447a46bd622951c47bde0657df14e9ae9e8cd47225b9a0a0",
+      "max_effect": 4621.537130410284,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_signal_long_cycle",
+      "seed": 2,
+      "file": "B_signal_long_cycle\\seed_2\\trajectories.npz",
+      "sha256": "fc8b1b0e41262277c967fa7a3052558987ca9b1c3a036f8edd1705fa9add04d0",
+      "max_effect": 4583.7243386152395,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_local",
+      "seed": 2,
+      "file": "B_distribution_local\\seed_2\\trajectories.npz",
+      "sha256": "3421ca4f451d073d7d061056de504cdaa689ad0f1ff53cf5a5acb1e62c74f501",
+      "max_effect": 3526.8864868631326,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_regional",
+      "seed": 2,
+      "file": "B_distribution_regional\\seed_2\\trajectories.npz",
+      "sha256": "8fe6c8bb70b503b4fa879c845df5a97381ae783a8c89f23d6d9777367b837736",
+      "max_effect": 4474.571075565672,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_global",
+      "seed": 2,
+      "file": "B_distribution_global\\seed_2\\trajectories.npz",
+      "sha256": "e8bf488eb206befb1c1954502bb76f2d596cf95395907936761580d6fdcc7740",
+      "max_effect": 4474.571075565672,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_inflow_spike",
+      "seed": 2,
+      "file": "B_inflow_spike\\seed_2\\trajectories.npz",
+      "sha256": "c746a5283837c88c4133982dcb714c0b2c017b5095a66a42156bac3fbf84c46b",
+      "max_effect": 2004.3366500306938,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E4_rain",
+      "seed": 2,
+      "file": "E4_rain\\seed_2\\trajectories.npz",
+      "sha256": "a91bec5ec96b80ae5b635260cfb9b7c796a2b7446e7cc820f6c9e87f1a41f63a",
+      "max_effect": 2686.4031699527227,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E4_snow",
+      "seed": 2,
+      "file": "E4_snow\\seed_2\\trajectories.npz",
+      "sha256": "2893cd6e2d73182f2a6ae2102bcbe61ae56a375730de54e9b5f0d23becaff2f9",
+      "max_effect": 3496.215260641097,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_weekend",
+      "seed": 2,
+      "file": "E5_weekend\\seed_2\\trajectories.npz",
+      "sha256": "0a5a6400ce4f911af345532b56d31a63f5f931c36734e4894eae53402ccd52b8",
+      "max_effect": 0.0,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_weekday",
+      "seed": 2,
+      "file": "E5_weekday\\seed_2\\trajectories.npz",
+      "sha256": "afeb00a03c7d5852838c098f789216b8e25aafe62b9916079bb80ebd8f447b13",
+      "max_effect": 4144.401323697195,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_guided",
+      "seed": 2,
+      "file": "E5_guided\\seed_2\\trajectories.npz",
+      "sha256": "9e04af873ca71c20aa62c941c01a0546a8c04a2a6fee69fda0440cf81f84b58d",
+      "max_effect": 1002.4159172491954,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_accident",
+      "seed": 3,
+      "file": "B_accident\\seed_3\\trajectories.npz",
+      "sha256": "7670c7f5ea36ad89bd76d849b34581577be9291bdbfff9d9f124d3c12cce1a23",
+      "max_effect": 3538.7287508631102,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E3_capacity_drop",
+      "seed": 3,
+      "file": "E3_capacity_drop\\seed_3\\trajectories.npz",
+      "sha256": "fa2bf5269da7489d034d17a75d752162154b0b9118e0b374337d0e68249014d6",
+      "max_effect": 4075.401971017334,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_signal_short_cycle",
+      "seed": 3,
+      "file": "B_signal_short_cycle\\seed_3\\trajectories.npz",
+      "sha256": "ec718f216396867142a96a4eeeac22e1c8fa5a8342475b494bdceba0184a6b73",
+      "max_effect": 4691.948339660969,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_signal_long_cycle",
+      "seed": 3,
+      "file": "B_signal_long_cycle\\seed_3\\trajectories.npz",
+      "sha256": "fed82e1371f57d9c1376b6338da605533274da0c8d3d17bdf45a3d028baffbc9",
+      "max_effect": 4579.672205408587,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_local",
+      "seed": 3,
+      "file": "B_distribution_local\\seed_3\\trajectories.npz",
+      "sha256": "12ac1b604fccc211b54b923ed90402997ec18b2b54542b8389c8ba095ff45ed2",
+      "max_effect": 3510.0000000030923,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_regional",
+      "seed": 3,
+      "file": "B_distribution_regional\\seed_3\\trajectories.npz",
+      "sha256": "a5a0a5043123d8d14effe8e2bede2dea9307284812dd4932eb3840be44cda9e4",
+      "max_effect": 4473.549189452679,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_global",
+      "seed": 3,
+      "file": "B_distribution_global\\seed_3\\trajectories.npz",
+      "sha256": "9563c9add8e3133f556fd256f428017c5232b74abd9be9ee7535cf891515288a",
+      "max_effect": 4473.549189453997,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_inflow_spike",
+      "seed": 3,
+      "file": "B_inflow_spike\\seed_3\\trajectories.npz",
+      "sha256": "4e236963bf20aace12225c77c2ff6ddd950625b43dbd073a3045b9a273c54bf4",
+      "max_effect": 1957.5424877696405,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E4_rain",
+      "seed": 3,
+      "file": "E4_rain\\seed_3\\trajectories.npz",
+      "sha256": "7d36db5b1ffa12c87a86258b20a902128871d82255f879c64cfd78177337efc0",
+      "max_effect": 2685.5961286397824,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E4_snow",
+      "seed": 3,
+      "file": "E4_snow\\seed_3\\trajectories.npz",
+      "sha256": "7c4d6fb6b27057552120c01365241cf2e847f626d5bcb95a81bbc5e133192283",
+      "max_effect": 3487.12683946997,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_weekend",
+      "seed": 3,
+      "file": "E5_weekend\\seed_3\\trajectories.npz",
+      "sha256": "900a1406fb5a29e7545f317c3c2b2c0807737e3917042461a1f79a7cd9a923b0",
+      "max_effect": 0.0,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_weekday",
+      "seed": 3,
+      "file": "E5_weekday\\seed_3\\trajectories.npz",
+      "sha256": "fbc56b38f8daffc2e0306c253427d355f08397163901aeaa45fb725101b6a46b",
+      "max_effect": 4147.32577159747,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_guided",
+      "seed": 3,
+      "file": "E5_guided\\seed_3\\trajectories.npz",
+      "sha256": "5a2f9e8d32055ef9a0709bbab2eb1ac4fc6acc5bdf5b04ce2da8b76610edd823",
+      "max_effect": 988.0438777806858,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_accident",
+      "seed": 4,
+      "file": "B_accident\\seed_4\\trajectories.npz",
+      "sha256": "2530fa13f272f9ffab6b2183517346ff0f23dae91e3efcb00c2ddeef04635c7f",
+      "max_effect": 3545.4545044943843,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E3_capacity_drop",
+      "seed": 4,
+      "file": "E3_capacity_drop\\seed_4\\trajectories.npz",
+      "sha256": "618bdfb9367e941655c5c8455533113506a87bfb132e11aed66ba2a41a633ff4",
+      "max_effect": 4076.190121935636,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_signal_short_cycle",
+      "seed": 4,
+      "file": "B_signal_short_cycle\\seed_4\\trajectories.npz",
+      "sha256": "086c5bb805537093d001a1030ee8e4d62dad761194783b107bb7059af3f9fed6",
+      "max_effect": 4643.383862467757,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_signal_long_cycle",
+      "seed": 4,
+      "file": "B_signal_long_cycle\\seed_4\\trajectories.npz",
+      "sha256": "f7e79bb476c1cf6c8348758939206d89bb0905efd95331d7b364459ba80b8055",
+      "max_effect": 4530.278511128885,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_local",
+      "seed": 4,
+      "file": "B_distribution_local\\seed_4\\trajectories.npz",
+      "sha256": "bdd97c31b60a7c71e45b831d77a22c8a334c5ce215b9d59ef9677e5e8e2d76da",
+      "max_effect": 3510.000000308336,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_regional",
+      "seed": 4,
+      "file": "B_distribution_regional\\seed_4\\trajectories.npz",
+      "sha256": "81f14d2c5104a0cf9b9f81e284000a8768a4cd9d9a75adb611ad73c59a5fc98b",
+      "max_effect": 4468.74372065631,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_distribution_global",
+      "seed": 4,
+      "file": "B_distribution_global\\seed_4\\trajectories.npz",
+      "sha256": "701f83bc35720d64d1cd202f58184341ffc75bd2d7c0f18df0f24d3398e5f258",
+      "max_effect": 4468.74372065631,
+      "checks_passed": true
+    },
+    {
+      "scenario": "B_inflow_spike",
+      "seed": 4,
+      "file": "B_inflow_spike\\seed_4\\trajectories.npz",
+      "sha256": "bbc61ade13729fcd04b97324bbac858ef09d4c5f0d8d89f4c0b7cb52a043eb4c",
+      "max_effect": 1921.5443273461283,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E4_rain",
+      "seed": 4,
+      "file": "E4_rain\\seed_4\\trajectories.npz",
+      "sha256": "96f8cbe16c10876e10bc12b12f5809594ad7bc49e3454187a4f49875b78ea602",
+      "max_effect": 2701.4736964427993,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E4_snow",
+      "seed": 4,
+      "file": "E4_snow\\seed_4\\trajectories.npz",
+      "sha256": "b578136c09f83ccd87e8e98a439f020075ea47901442301b296b5a053b71365a",
+      "max_effect": 3503.2278987407926,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_weekend",
+      "seed": 4,
+      "file": "E5_weekend\\seed_4\\trajectories.npz",
+      "sha256": "af27bf92433c280c0b9b09a18ccb2ed629d9c1ec3131b4efe08cf836846723e5",
+      "max_effect": 0.0,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_weekday",
+      "seed": 4,
+      "file": "E5_weekday\\seed_4\\trajectories.npz",
+      "sha256": "80f371259f6964526961f206973603df82ec8c530559edad948114fcf2e46fee",
+      "max_effect": 4151.229163839924,
+      "checks_passed": true
+    },
+    {
+      "scenario": "E5_guided",
+      "seed": 4,
+      "file": "E5_guided\\seed_4\\trajectories.npz",
+      "sha256": "776b13d5b54c065fe35f746dbf5a10f41a482da7b528ff117e7db78c711fcd84",
+      "max_effect": 971.7777355612352,
+      "checks_passed": true
+    }
+  ]
+}

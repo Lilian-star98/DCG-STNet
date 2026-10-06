@@ -1,0 +1,50 @@
+[
+  {
+    "dataset": "metr-la",
+    "horizon_minutes": 15,
+    "reference": "D2STGNN",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "improvement_percent": -10.07364749342564,
+    "p_value": 6.604628327570395e-07,
+    "BH_q": 1.9813884982711185e-06,
+    "supports_lower_MAE": false
+  },
+  {
+    "dataset": "metr-la",
+    "horizon_minutes": 30,
+    "reference": "D2STGNN",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "improvement_percent": -12.697094687118048,
+    "p_value": 2.2610785298722197e-06,
+    "BH_q": 3.1675773508724733e-06,
+    "supports_lower_MAE": false
+  },
+  {
+    "dataset": "metr-la",
+    "horizon_minutes": 60,
+    "reference": "D2STGNN",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "improvement_percent": -14.239507081990258,
+    "p_value": 3.167577350872473e-06,
+    "BH_q": 3.1675773508724733e-06,
+    "supports_lower_MAE": false
+  }
+]

@@ -1,0 +1,9 @@
+## Prediction ablation (horizon = 60 min), MAE / RMSE (paper-reported)
+
+| Variant | METR-LA MAE/RMSE | Q-Traffic MAE/RMSE | Main contribution |
+| --- | --- | --- | --- |
+| DCG-STNet (full) | 3.45 / 7.12 | 3.65 / 7.88 | full model |
+| w/o Scene | 3.52 / 7.25 | 3.98 / 8.52 | non-stationary events |
+| w/o Macro | 3.55 / 7.32 | 3.82 / 8.15 | global confounders |
+| w/o Dynamic | 3.68 / 7.55 | 4.10 / 8.90 | local topology evolution |
+| w/o Causal-Reg | 3.42 / 7.08 | 3.75 / 8.05 | overfitting correlations |

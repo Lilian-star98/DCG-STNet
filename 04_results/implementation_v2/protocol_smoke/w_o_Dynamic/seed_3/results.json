@@ -1,0 +1,294 @@
+{
+  "seed": 3,
+  "variant": "w/o Dynamic",
+  "dataset": "synthetic",
+  "source_sha256": "4d1dacc89dbc39545f03b2e23a6b3481fe0ddabe3e146727ec231149afcf832a",
+  "evidence": "computed_from_training",
+  "config": {
+    "num_nodes": 8,
+    "d_x": 2,
+    "d_u": 1,
+    "d_z_loc": 4,
+    "d_z_glob": 5,
+    "d_w": 0,
+    "d_y": 2,
+    "d_hidden": 8,
+    "d_scenario": 16,
+    "d_latent": 8,
+    "k_neighbors": 8,
+    "d_decay": 1500.0,
+    "gumbel_tau": 0.5,
+    "alpha_static_adj": 0.5,
+    "n_regions": 0,
+    "lambda_sparse": 0.001,
+    "lambda_smooth": 0.001,
+    "lambda_dual": 0.1,
+    "lambda_kl": 0.001,
+    "lambda_res_smooth": 0.0001,
+    "lambda_inv": 0.0,
+    "prediction_loss": "mae",
+    "hist": 12,
+    "horizon": 12,
+    "lr": 0.001,
+    "lr_graph": 0.003,
+    "lr_latent": 0.0003,
+    "weight_decay": 0.0,
+    "dropout": 0.1
+  },
+  "input_metadata": {
+    "missing_inputs": []
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_objective": 0.6246033946344675,
+      "val_standardized_MAE": 0.5040318965911865
+    }
+  ],
+  "validation": {
+    "15": {
+      "speed": {
+        "MAE": 4.864193916320801,
+        "RMSE": 8.652390480041504,
+        "MAPE": 0.3249026834964752,
+        "R2": 0.8474740386009216
+      },
+      "flow": {
+        "MAE": 460.2969665527344,
+        "RMSE": 585.8698120117188,
+        "MAPE": 0.1414959877729416,
+        "R2": 0.7125276327133179
+      }
+    },
+    "30": {
+      "speed": {
+        "MAE": 4.4472975730896,
+        "RMSE": 8.77402400970459,
+        "MAPE": 0.2792235314846039,
+        "R2": 0.8398185968399048
+      },
+      "flow": {
+        "MAE": 491.5175476074219,
+        "RMSE": 618.3973388671875,
+        "MAPE": 0.14647403359413147,
+        "R2": 0.6819310188293457
+      }
+    },
+    "60": {
+      "speed": {
+        "MAE": 4.237509250640869,
+        "RMSE": 9.47610092163086,
+        "MAPE": 0.26261237263679504,
+        "R2": 0.8082149624824524
+      },
+      "flow": {
+        "MAE": 685.3367919921875,
+        "RMSE": 781.81982421875,
+        "MAPE": 0.1904047131538391,
+        "R2": 0.49848616123199463
+      }
+    }
+  },
+  "test": {
+    "15": {
+      "speed": {
+        "MAE": 6.007941722869873,
+        "RMSE": 12.896451950073242,
+        "MAPE": 0.4276737570762634,
+        "R2": 0.6531513929367065
+      },
+      "flow": {
+        "MAE": 589.6734008789062,
+        "RMSE": 646.6541748046875,
+        "MAPE": 0.17274418473243713,
+        "R2": 0.6294546127319336
+      }
+    },
+    "30": {
+      "speed": {
+        "MAE": 5.5221052169799805,
+        "RMSE": 12.075565338134766,
+        "MAPE": 0.3902377188205719,
+        "R2": 0.6958743929862976
+      },
+      "flow": {
+        "MAE": 609.4227294921875,
+        "RMSE": 663.949951171875,
+        "MAPE": 0.17798259854316711,
+        "R2": 0.6095206141471863
+      }
+    },
+    "60": {
+      "speed": {
+        "MAE": 5.027524471282959,
+        "RMSE": 11.254947662353516,
+        "MAPE": 0.34665900468826294,
+        "R2": 0.7358837127685547
+      },
+      "flow": {
+        "MAE": 716.5826416015625,
+        "RMSE": 764.6747436523438,
+        "MAPE": 0.2022707611322403,
+        "R2": 0.48144739866256714
+      }
+    }
+  },
+  "events": {
+    "15": {
+      "S1": {
+        "count": 200,
+        "metrics": {
+          "speed": {
+            "MAE": 6.007941722869873,
+            "RMSE": 12.896451950073242,
+            "MAPE": 0.4276737570762634,
+            "R2": 0.6531513929367065
+          },
+          "flow": {
+            "MAE": 589.6734008789062,
+            "RMSE": 646.6541748046875,
+            "MAPE": 0.17274418473243713,
+            "R2": 0.6294546127319336
+          }
+        }
+      },
+      "S2": {
+        "count": 0,
+        "metrics": {
+          "speed": null,
+          "flow": null
+        },
+        "PDR_percent": {
+          "speed": null,
+          "flow": null
+        }
+      },
+      "S3": {
+        "count": 0,
+        "metrics": {
+          "speed": null,
+          "flow": null
+        },
+        "PDR_percent": {
+          "speed": null,
+          "flow": null
+        }
+      },
+      "S4": {
+        "count": 0,
+        "metrics": {
+          "speed": null,
+          "flow": null
+        },
+        "PDR_percent": {
+          "speed": null,
+          "flow": null
+        }
+      }
+    },
+    "30": {
+      "S1": {
+        "count": 200,
+        "metrics": {
+          "speed": {
+            "MAE": 5.5221052169799805,
+            "RMSE": 12.075565338134766,
+            "MAPE": 0.3902377188205719,
+            "R2": 0.6958743929862976
+          },
+          "flow": {
+            "MAE": 609.4227294921875,
+            "RMSE": 663.949951171875,
+            "MAPE": 0.17798259854316711,
+            "R2": 0.6095206141471863
+          }
+        }
+      },
+      "S2": {
+        "count": 0,
+        "metrics": {
+          "speed": null,
+          "flow": null
+        },
+        "PDR_percent": {
+          "speed": null,
+          "flow": null
+        }
+      },
+      "S3": {
+        "count": 0,
+        "metrics": {
+          "speed": null,
+          "flow": null
+        },
+        "PDR_percent": {
+          "speed": null,
+          "flow": null
+        }
+      },
+      "S4": {
+        "count": 0,
+        "metrics": {
+          "speed": null,
+          "flow": null
+        },
+        "PDR_percent": {
+          "speed": null,
+          "flow": null
+        }
+      }
+    },
+    "60": {
+      "S1": {
+        "count": 200,
+        "metrics": {
+          "speed": {
+            "MAE": 5.027524471282959,
+            "RMSE": 11.254947662353516,
+            "MAPE": 0.34665900468826294,
+            "R2": 0.7358837127685547
+          },
+          "flow": {
+            "MAE": 716.5826416015625,
+            "RMSE": 764.6747436523438,
+            "MAPE": 0.2022707611322403,
+            "R2": 0.48144739866256714
+          }
+        }
+      },
+      "S2": {
+        "count": 0,
+        "metrics": {
+          "speed": null,
+          "flow": null
+        },
+        "PDR_percent": {
+          "speed": null,
+          "flow": null
+        }
+      },
+      "S3": {
+        "count": 0,
+        "metrics": {
+          "speed": null,
+          "flow": null
+        },
+        "PDR_percent": {
+          "speed": null,
+          "flow": null
+        }
+      },
+      "S4": {
+        "count": 0,
+        "metrics": {
+          "speed": null,
+          "flow": null
+        },
+        "PDR_percent": {
+          "speed": null,
+          "flow": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "model": "D2STGNN",
+  "seed": 1,
+  "phase": "final",
+  "settings": {
+    "max_epochs": 100,
+    "patience": 15,
+    "batch_size": 8,
+    "threads": 4,
+    "history": 12,
+    "horizon": 12,
+    "weight_decay": 0.0001,
+    "hidden": 32,
+    "lr": 0.001
+  },
+  "validation_mae": 2.7991821842110447,
+  "epochs": 58,
+  "best_epoch": 43,
+  "data_hash": "f7de79646e4868cb9b043e2a8ef98274fbc4fbc3eea692ed9cac91792c865452",
+  "stopped_by": "early_stopping",
+  "test_evaluated": true,
+  "physics_calibrated": false,
+  "test": {
+    "15": {
+      "count": 1242568,
+      "MAE": 2.669309248085657,
+      "RMSE": 5.083206666668309,
+      "MAPE_percent": 6.8326727116416714
+    },
+    "30": {
+      "count": 1242550,
+      "MAE": 3.021118718354612,
+      "RMSE": 6.1075566853332415,
+      "MAPE_percent": 8.273743478162611
+    },
+    "60": {
+      "count": 1242514,
+      "MAE": 3.4583203951608854,
+      "RMSE": 7.268761150783589,
+      "MAPE_percent": 10.266442045059302
+    }
+  },
+  "test_all_horizons": {
+    "count": 14910564,
+    "MAE": 2.9941726970857405,
+    "RMSE": 6.09532608994349,
+    "MAPE_percent": 8.25661440525666
+  }
+}

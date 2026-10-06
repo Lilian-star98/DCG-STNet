@@ -1,0 +1,53 @@
+{
+  "name": "B_distribution_global",
+  "seed": 4,
+  "dt_sec": 30,
+  "steps": 72,
+  "spec": {
+    "kind": "distribution_shift",
+    "nodes": [
+      2
+    ],
+    "t_start": 12,
+    "t_peak": 24,
+    "t_end": 48,
+    "beta": 0.5,
+    "region_ratio": 1,
+    "extra": {
+      "od_nodes": [
+        0,
+        1
+      ]
+    }
+  },
+  "checks": {
+    "factual": {
+      "finite": true,
+      "max_local_conservation_error_veh": 1.326716514427062e-14,
+      "max_queue_conservation_error_veh": 5.065392549852277e-16,
+      "max_network_conservation_error_veh": 2.8421709430404007e-13,
+      "density_bounds": true,
+      "speed_bounds": true,
+      "outflow_capacity": true,
+      "fd_consistency": true
+    },
+    "counterfactual": {
+      "finite": true,
+      "max_local_conservation_error_veh": 1.1842378938158263e-14,
+      "max_queue_conservation_error_veh": 1.3322676295501878e-14,
+      "max_network_conservation_error_veh": 8.526512829121202e-14,
+      "density_bounds": true,
+      "speed_bounds": true,
+      "outflow_capacity": true,
+      "fd_consistency": true
+    }
+  },
+  "evidence": "synthetic_CTM_not_trained_model_result",
+  "units": {
+    "speed": "km/h",
+    "flow": "veh/h",
+    "n": "veh",
+    "queue": "veh",
+    "rho": "veh/m/storage_lane"
+  }
+}

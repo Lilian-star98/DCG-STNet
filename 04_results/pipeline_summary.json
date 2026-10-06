@@ -1,0 +1,44 @@
+{
+  "figures": {
+    "fig1": "out/paper\\figures\\fig1_local_flow.png",
+    "fig2": "out/paper\\figures\\fig2_lane_narrowing.png",
+    "fig3": "out/paper\\figures\\fig3_rainfall_speed.png",
+    "fig4": "out/paper\\figures\\fig4_weather_topology.png",
+    "fig5": "out/paper\\figures\\fig5_school_hotspot.png",
+    "fig6": "out/paper\\figures\\fig6_micro_state.png",
+    "fig7": "out/paper\\figures\\fig7_ripple_effect.png",
+    "fig8": "out/paper\\figures\\fig8_subnet_topology.png"
+  },
+  "tables": {
+    "table1": {
+      "csv": "out/paper\\tables\\table1_in_distribution.csv",
+      "md": "out/paper\\tables\\table1_in_distribution.md",
+      "png": "out/paper\\tables\\table1_in_distribution.png"
+    },
+    "table2": {
+      "csv": "out/paper\\tables\\table2_event_stratified.csv",
+      "md": "out/paper\\tables\\table2_event_stratified.md",
+      "png": "out/paper\\tables\\table2_event_stratified.png"
+    },
+    "table3": {
+      "csv": "out/paper\\tables\\table3_ablation_pred.csv",
+      "md": "out/paper\\tables\\table3_ablation_pred.md",
+      "png": "out/paper\\tables\\table3_ablation_pred.png"
+    },
+    "table4": {
+      "csv": "out/paper\\tables\\table4_ablation_cf.csv",
+      "md": "out/paper\\tables\\table4_ablation_cf.md",
+      "png": "out/paper\\tables\\table4_ablation_cf.png"
+    }
+  },
+  "pvr_demo": {
+    "e3_cf": 0.0,
+    "e4_cf": 0.0
+  },
+  "model_smoke": {
+    "L_total": 0.8273138403892517,
+    "L_pred": 0.827050507068634,
+    "L_sparse": 0.008390837348997593,
+    "L_KL": 0.24556173384189606
+  }
+}
