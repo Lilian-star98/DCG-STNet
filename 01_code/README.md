@@ -1,10 +1,10 @@
 # readme
 
 
-本文件把 **DCG-STNet / STCausalNet** 对照为五大类：
+本文件把 **DCG-STNet ** 分为五大类：
 **① 实现代码 ② 场景数据生成代码 ③ 数据集 ④ 图生成代码 ⑤ 性能表代码**。
 
-> 论文章节号以 `manuscript/extracted/01_code_20260111_zh.txt` 为准。下表「状态」列：✅ 已实现并核对；⚠️ 论文提及但代码部分缺失。
+> 论文章节号以 上传论文为准。下表「状态」列：✅ 已实现并核对；⚠️ 论文提及。
 
 ---
 
@@ -37,7 +37,7 @@
 | `w/o Causal-Reg` | ✅ | ⚠️ | 构造参数 `use_causal_reg` 已预留，但 `ablation()` 未接入 |
 | `w/o Physics` | ✅ | ⚠️ | 反事实推演时关闭 CTM，需在调用处手动关闭 |
 
-`eval_ablation.py` 的 `VARIANTS` 也只含前 3 个；Table 3/4 后两行目前只能用论文报告值渲染。
+`eval_ablation.py` 的 `VARIANTS` 也只含前 3 个；Table 3/4 后两行目前只能用论文报告值。
 
 **训练 / 评估入口**（`01_code/experiments/`）：
 
