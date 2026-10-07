@@ -1,49 +1,49 @@
 # DCG-STNet
-DCG-STNet: Dynamic Structural Causal Modeling for Urban Traffic Forecasting and Counterfactual Intervention Analysis Source code for Transportation Research Part C submission
 
-本文件把 **DCG-STNet / STCausalNet** 对照为五大类：
-**① 实现代码 ② 场景数据生成代码 ③ 数据集 ④ 图生成代码 ⑤ 性能表代码**。
+DCG-STNet: Dynamic Structural Causal Modeling for Urban Traffic Forecasting and Counterfactual Intervention Analysis. Source code for a Transportation Research Part C submission.
 
-> 论文章节号以 `manuscript/extracted/01_code_20260111_zh.txt` 为准。下表「状态」列：✅ 已实现并核对；⚠️ 论文提及但代码部分缺失。
+This README maps **DCG-STNet / STCausalNet** to five areas: **① model implementation ② scenario generation ③ datasets ④ figure generation ⑤ performance tables**.
+
+> Section numbers follow `manuscript/extracted/01_code_20260111_zh.txt`. In the tables below, ✅ means implemented and checked; ⚠️ means mentioned in the paper but only partially implemented in the code.
 
 ---
 
-## ① 实现代码（§3 方法与理论框架）
+## ① Model implementation (§3: methods and theoretical framework)
 
-| 论文章节 | 文件 | 关键类/函数 | 状态 |
-|----------|------|-------------|------|
-| §3.1–3.2 问题与 SCM 假设 | `01_code/config.py` | `ModelConfig` `DataConfig` `ScenarioConfig` | ✅ |
-| §3.3–3.4 节点结构方程 / GRU+门控 GCN | `01_code/model/node_dynamics.py` | `NodeDynamics` `OutputDecoder` | ✅ |
-| §3.5 稀疏+缓慢变化正则 | `01_code/model/losses.py` | `L_sparse` `L_smooth` | ✅ |
-| §3.6.1 场景编码（多源条件编码） | `01_code/model/scenario_encoder.py` | `ScenarioEncoder` | ✅ |
-| §3.6.2 物理约束候选边集 | `01_code/model/candidate_edges.py` | `build_candidate_edges` | ✅ |
-| 定理 3.4 分层粗化 | `01_code/model/hierarchical_graph.py` | `coarsen_regions` | ✅ |
-| §3.6.3 Gumbel+LWR+Top-K 动态因果图 | `01_code/model/dynamic_causal_graph.py` | `SceneAwareGraphGenerator` | ✅ |
-| §3.6.4 自适应融合邻接 | `01_code/model/fusion_adj.py` | `FusionAdjacency` | ✅ |
-| §3.7 空间结构化噪声+潜在宏观因子变分推理 | `01_code/model/latent_macro.py` | `LatentMacroInferencer` | ✅ |
-| §3.8 双世界反事实（Alg. 3.1） | `01_code/model/counterfactual.py` | `InterventionSpec` `apply_control` `apply_edge_mask` `apply_exog` | ✅ |
-| §3.9 复合损失 | `01_code/model/losses.py` | `CompositeLoss` | ✅ |
-| §3.9 自适应优化（分组学习率） | `01_code/experiments/train.py` | `main()` 内 grouped optimizer | ✅ |
-| 完整模型总装 | `01_code/model/stcausalnet.py` | `STCausalNet` | ✅ |
-| 模型包入口 | `01_code/model/__init__.py` | 统一导出 | ✅ |
+| Paper section | File | Key classes/functions | Status |
+|---|---|---|---|
+| §3.1–3.2 Problem formulation and SCM assumptions | `01_code/config.py` | `ModelConfig` `DataConfig` `ScenarioConfig` | ✅ |
+| §3.3–3.4 Node structural equations / GRU + gated GCN | `01_code/model/node_dynamics.py` | `NodeDynamics` `OutputDecoder` | ✅ |
+| §3.5 Sparsity and slow-change regularization | `01_code/model/losses.py` | `L_sparse` `L_smooth` | ✅ |
+| §3.6.1 Scenario encoding from multiple sources | `01_code/model/scenario_encoder.py` | `ScenarioEncoder` | ✅ |
+| §3.6.2 Physically constrained candidate edges | `01_code/model/candidate_edges.py` | `build_candidate_edges` | ✅ |
+| Theorem 3.4 Hierarchical coarsening | `01_code/model/hierarchical_graph.py` | `coarsen_regions` | ✅ |
+| §3.6.3 Gumbel + LWR + Top-K dynamic causal graph | `01_code/model/dynamic_causal_graph.py` | `SceneAwareGraphGenerator` | ✅ |
+| §3.6.4 Adaptive adjacency fusion | `01_code/model/fusion_adj.py` | `FusionAdjacency` | ✅ |
+| §3.7 Spatially structured noise and variational inference for latent macro factors | `01_code/model/latent_macro.py` | `LatentMacroInferencer` | ✅ |
+| §3.8 Two-world counterfactuals (Algorithm 3.1) | `01_code/model/counterfactual.py` | `InterventionSpec` `apply_control` `apply_edge_mask` `apply_exog` | ✅ |
+| §3.9 Composite loss | `01_code/model/losses.py` | `CompositeLoss` | ✅ |
+| §3.9 Adaptive optimization with parameter-group learning rates | `01_code/experiments/train.py` | Grouped optimizer in `main()` | ✅ |
+| Full model assembly | `01_code/model/stcausalnet.py` | `STCausalNet` | ✅ |
+| Model package entry point | `01_code/model/__init__.py` | Unified exports | ✅ |
 
-**消融变体（§4.8）**：论文定义 5 个变体，`STCausalNet.ablation(cfg, variant)` 类方法当前实现 3 个：
+**Ablation variants (§4.8):** The paper defines five variants. The `STCausalNet.ablation(cfg, variant)` class method currently implements three:
 
-| 变体 | 论文 | 代码 | 说明 |
-|------|------|------|------|
+| Variant | In paper | In code | Notes |
+|---|---|---|---|
 | `w/o Scene` | ✅ | ✅ | `use_scene=False` |
 | `w/o Macro` | ✅ | ✅ | `use_macro=False` |
 | `w/o Dynamic` | ✅ | ✅ | `use_dynamic=False` |
-| `w/o Causal-Reg` | ✅ | ⚠️ | 构造参数 `use_causal_reg` 已预留，但 `ablation()` 未接入 |
-| `w/o Physics` | ✅ | ⚠️ | 反事实推演时关闭 CTM，需在调用处手动关闭 |
+| `w/o Causal-Reg` | ✅ | ⚠️ | The `use_causal_reg` constructor argument is reserved, but `ablation()` does not expose it. |
+| `w/o Physics` | ✅ | ⚠️ | CTM must be disabled manually at the counterfactual rollout call site. |
 
-`eval_ablation.py` 的 `VARIANTS` 也只含前 3 个；Table 3/4 后两行目前只能用论文报告值渲染。
+The `VARIANTS` list in `eval_ablation.py` also contains only the first three variants. The last two rows of Tables 3 and 4 can currently be rendered only from values reported in the manuscript.
 
-**训练 / 评估入口**（`01_code/experiments/`）：
+**Training and evaluation entry points** (`01_code/experiments/`):
 
 ```bash
 python -m 01_code.experiments.train --dataset metr-la --epochs 20 --ckpt out\01_code\stcausalnet.pt
-# 消融 --ablation full|w/o Scene|w/o Macro|w/o Dynamic
+# Ablations: --ablation full|w/o Scene|w/o Macro|w/o Dynamic
 python -m 01_code.experiments.eval_ablation --dataset metr-la --epochs 5 --out out\01_code\ablation.json
 python -m 01_code.experiments.eval_forecast
 python -m 01_code.experiments.eval_events
@@ -51,94 +51,92 @@ python -m 01_code.experiments.eval_events
 
 ---
 
-## ② 场景数据生成代码（附录 B + E3/E4/E5）
+## ② Scenario generation (Appendix B and E3/E4/E5)
 
-| 论文 | 文件 | 关键函数 | 状态 |
-|------|------|----------|------|
-| 附录 B CTM 核心 | `01_code/scenarios/ctm.py` | `LinkParams` `step_ctm` `simulate` `physics_violation_rate` `default_params` | ✅ |
-| 附录 B 平滑强度 | `01_code/scenarios/intensity.py` | `smooth_beta` | ✅ |
-| 附录 B 步骤1–4 工作流 | `01_code/scenarios/generate.py` | `ScenarioSpec` `generate_pair` | ✅ |
-| §4.6.1 E3 车道缩减 | `01_code/scenarios/e3_capacity_drop.py` | `run_e3` | ✅ |
-| §4.6.2 E4 降雨/降雪 | `01_code/scenarios/e4_weather.py` | `run_e4` | ✅ |
-| §4.7 E5 学校+引导 | `01_code/scenarios/e5_school.py` | `run_e5` | ✅ |
-| 演示网络（朝阳走廊） | `01_code/scenarios/network.py` | `01_code_NODES` `build_demo_network` | ✅ |
-| 真实 Q 适配 | `01_code/scenarios/e_real_q.py` | `run_e3_real` `run_e4_real` `run_e5_real` `_apply_local_drop` `_apply_weather` `_apply_school` `_apply_guidance` | ✅ |
-| 场景包入口 | `01_code/scenarios/__init__.py` | 统一导出 | ✅ |
-
----
-
-## ③ 数据集（§4.1–4.2）
-
-### 数据集清单
-
-| 数据集 | 论文用途 | 原始文件 | 加载调用 |
-|--------|----------|----------|----------|
-| METR-LA | §4.1.1 / E1 / E2 单变量 speed | `raw_data/METR-LA/METR-LA.h5` + `adj_METR-LA.pkl` | `load_dataset("metr-la")` |
-| PEMS-BAY | §4.1.1 / E1 单变量 speed | `raw_data/PEMS-BAY/PEMS-BAY.h5` + `adj_PEMS-BAY.pkl` | `load_dataset("pems-bay")` |
-| PEMS04 | §4.1.1 多变量 | `raw_data/PEMS04/PEMS04.npz` | `load_dataset("pems04")` |
-| Q-Traffic | §4.1.2 多变量 speed+flow，含事件标注 | `Q/event_traffic_beijing_1km_mv_avg_15min_completion/*.pkl` | `load_dataset("q")` |
-
-Q-Traffic 覆盖北京核心区（39.81–40.01 N, 116.20–116.45 E，15073 路段，2017-04-01 至 05-31）。
-
-### 数据处理代码
-
-| 处理步骤（论文 §4.2） | 文件 | 关键函数 | 状态 |
-|----------------------|------|----------|------|
-| 6:2:2 切分 / Z-score / 滑动窗口（§4.2.1–4.2.2） | `01_code/data/preprocess.py` | `time_split` `scale_zscore` `inv_zscore` `make_windows` | ✅ |
-| 时间特征（sin/cos 时刻、周末、节假日，§4.2.3） | `01_code/data/features.py` | `build_time_features` | ✅ |
-| Q 场景特征（事件/天气/POI，§4.2.3） | `01_code/data/features.py` | `build_q_scene_features` | ✅ |
-| 真实 Q 子图采样 + 瓶颈/学校节点 | `01_code/data/q_real.py` | `load_real_q_subgraph` `pick_bottleneck_node` `pick_school_node` | ✅ |
-| 各数据集加载与邻接 | `01_code/data/loaders.py` | `load_dataset` `load_adjacency` `load_q_coords` | ✅ |
-| 包入口（h5py 懒加载） | `01_code/data/__init__.py` | — | ✅ |
-
-底层读写复用 `dc_ctgcn/data_utils.py`。
-
+| Paper component | File | Key functions | Status |
+|---|---|---|---|
+| Appendix B: CTM core | `01_code/scenarios/ctm.py` | `LinkParams` `step_ctm` `simulate` `physics_violation_rate` `default_params` | ✅ |
+| Appendix B: smooth intervention intensity | `01_code/scenarios/intensity.py` | `smooth_beta` | ✅ |
+| Appendix B: steps 1–4 workflow | `01_code/scenarios/generate.py` | `ScenarioSpec` `generate_pair` | ✅ |
+| §4.6.1 E3: lane reduction | `01_code/scenarios/e3_capacity_drop.py` | `run_e3` | ✅ |
+| §4.6.2 E4: rain/snow | `01_code/scenarios/e4_weather.py` | `run_e4` | ✅ |
+| §4.7 E5: school and guidance | `01_code/scenarios/e5_school.py` | `run_e5` | ✅ |
+| Demonstration network (Chaoyang corridor) | `01_code/scenarios/network.py` | `01_code_NODES` `build_demo_network` | ✅ |
+| Real Q-Traffic adapter | `01_code/scenarios/e_real_q.py` | `run_e3_real` `run_e4_real` `run_e5_real` `_apply_local_drop` `_apply_weather` `_apply_school` `_apply_guidance` | ✅ |
+| Scenario package entry point | `01_code/scenarios/__init__.py` | Unified exports | ✅ |
 
 ---
 
-## ④ 图生成代码（Fig.1–Fig.8）
+## ③ Datasets (§4.1–4.2)
+
+### Dataset inventory
+
+| Dataset | Use in paper | Source files | Loader call |
+|---|---|---|---|
+| METR-LA | §4.1.1 / E1 / E2, univariate speed | `raw_data/METR-LA/METR-LA.h5` + `adj_METR-LA.pkl` | `load_dataset("metr-la")` |
+| PEMS-BAY | §4.1.1 / E1, univariate speed | `raw_data/PEMS-BAY/PEMS-BAY.h5` + `adj_PEMS-BAY.pkl` | `load_dataset("pems-bay")` |
+| PEMS04 | §4.1.1, multivariate data | `raw_data/PEMS04/PEMS04.npz` | `load_dataset("pems04")` |
+| Q-Traffic | §4.1.2, multivariate speed + flow with event labels | `Q/event_traffic_beijing_1km_mv_avg_15min_completion/*.pkl` | `load_dataset("q")` |
+
+Q-Traffic covers central Beijing (39.81–40.01° N, 116.20–116.45° E), 15,073 road segments, from 2017-04-01 through 2017-05-31.
+
+### Data processing
+
+| Processing step (paper §4.2) | File | Key functions | Status |
+|---|---|---|---|
+| 6:2:2 split, Z-score, and sliding windows (§4.2.1–4.2.2) | `01_code/data/preprocess.py` | `time_split` `scale_zscore` `inv_zscore` `make_windows` | ✅ |
+| Time features (sin/cos time of day, weekends, holidays; §4.2.3) | `01_code/data/features.py` | `build_time_features` | ✅ |
+| Q-Traffic scenario features (events/weather/POI; §4.2.3) | `01_code/data/features.py` | `build_q_scene_features` | ✅ |
+| Real Q-Traffic subgraph sampling and bottleneck/school nodes | `01_code/data/q_real.py` | `load_real_q_subgraph` `pick_bottleneck_node` `pick_school_node` | ✅ |
+| Dataset loading and adjacency | `01_code/data/loaders.py` | `load_dataset` `load_adjacency` `load_q_coords` | ✅ |
+| Package entry point (lazy `h5py` import) | `01_code/data/__init__.py` | — | ✅ |
+
+The low-level I/O code reuses `dc_ctgcn/data_utils.py`.
+
+---
+
+## ④ Figure generation (Fig. 1–8)
 
 ```bash
-# 真实 Q 路网出图（默认，max_nodes=2000）
+# Plot the real Q-Traffic road network (default: max_nodes=2000)
 python -m 01_code.figures --out out\01_code\figures_real_q --max-nodes 2000
-# 合成朝阳演示网络出图
+# Plot the synthetic Chaoyang demonstration network
 python -m 01_code.figures --out out\01_code\figures --demo
 ```
 
-| 图 | 论文位置 | 内容 | 脚本 | 数据来源 | 状态 |
-|----|----------|------|------|----------|------|
-| Fig.1 | §4.6.1 | 局部路网流影响（拥堵扇面） | `01_code/figures/fig1_local_flow.py` | E3 | ✅ |
-| Fig.2 | §4.6.1 | 节点 100 缩道对邻接节点时序 | `01_code/figures/fig2_lane_narrowing.py` | E3 | ✅ |
-| Fig.3 | §4.6.2 | 区级均速：晴 vs 降雨演化 | `01_code/figures/fig3_rainfall_speed.py` | E4 | ✅ |
-| Fig.4 | §4.6.2 | 天气脆弱性拓扑快照（t=18:00） | `01_code/figures/fig4_weather_topology.py` | E4 | ✅ |
-| Fig.5 | §4.7.1 | 学校拥堵热点识别（长尾+时域） | `01_code/figures/fig5_school_hotspot.py` | E5 | ✅ |
-| Fig.6 | §4.7.2 | 节点 52/202 微观状态跃迁 | `01_code/figures/fig6_micro_state.py` | E5 | ✅ |
-| Fig.7 | §4.7.2–4.7.3 | 干预增益与涟漪效应量化 | `01_code/figures/fig7_ripple_effect.py` | E5 | ✅ |
-| Fig.8 | §4.7.3 | 子网拓扑状态跃迁快照 | `01_code/figures/fig8_subnet_topology.py` | E5 | ✅ |
+| Figure | Paper section | Content | Script | Data source | Status |
+|---|---|---|---|---|---|
+| Fig. 1 | §4.6.1 | Local road-flow effects (congestion fan) | `01_code/figures/fig1_local_flow.py` | E3 | ✅ |
+| Fig. 2 | §4.6.1 | Time series of adjacent nodes after narrowing at node 100 | `01_code/figures/fig2_lane_narrowing.py` | E3 | ✅ |
+| Fig. 3 | §4.6.2 | District-level mean speed: clear weather versus rainfall | `01_code/figures/fig3_rainfall_speed.py` | E4 | ✅ |
+| Fig. 4 | §4.6.2 | Weather-vulnerability topology snapshot (18:00) | `01_code/figures/fig4_weather_topology.py` | E4 | ✅ |
+| Fig. 5 | §4.7.1 | School congestion hotspot identification (long tail and temporal extent) | `01_code/figures/fig5_school_hotspot.py` | E5 | ✅ |
+| Fig. 6 | §4.7.2 | Microstate transitions at nodes 52 and 202 | `01_code/figures/fig6_micro_state.py` | E5 | ✅ |
+| Fig. 7 | §4.7.2–4.7.3 | Intervention gains and ripple effects | `01_code/figures/fig7_ripple_effect.py` | E5 | ✅ |
+| Fig. 8 | §4.7.3 | Subnetwork topology transition snapshots | `01_code/figures/fig8_subnet_topology.py` | E5 | ✅ |
 
-共享样式：`01_code/figures/style.py`（`SPEED_CMAP` `draw_graph`）。
-入口：`01_code/figures/__init__.py`（`render_all`，含 `real_q` 开关，自动调用 E3/E4/E5）、`__main__.py`。
-
+Shared styling: `01_code/figures/style.py` (`SPEED_CMAP`, `draw_graph`).
+Entry points: `01_code/figures/__init__.py` (`render_all`, with a `real_q` switch that automatically invokes E3/E4/E5) and `__main__.py`.
 
 ---
 
-## ⑤ 性能表代码（Table 1–4）
+## ⑤ Performance tables (Tables 1–4)
 
 ```bash
-# 从论文报告数值渲染四张表（无需重训）
+# Render four tables from the paper-reported numbers (no retraining)
 python -c "from 01_code.tables import render_all; render_all('out/01_code/tables')"
-# 从 benchmark 实测结果渲染对表
+# Render comparisons from measured benchmark results
 python -m 01_code.experiments.render_benchmark_tables --results out/01_code/benchmark/results.json
 ```
 
-| 表 | 论文位置 | 内容 | 脚本 | 指标 | 状态 |
-|----|----------|------|------|------|------|
-| Table 1 | §4.5.1 (E1) | 分布内基准（METR-LA/PEMS-BAY, H=12） | `01_code/tables/table1_in_distribution.py` | MAE/RMSE/MAPE | ✅ |
-| Table 2 | §4.5.2 (E2) | 事件分层（S1–S4 + PDR） | `01_code/tables/table2_event_stratified.py` | MAE + PDR | ✅ |
-| Table 3 | §4.8 (分析 I) | 预测性能消融 | `01_code/tables/table3_ablation_pred.py` | MAE/RMSE | ✅ |
-| Table 4 | §4.8 (分析 II) | 反事实有效性消融 | `01_code/tables/table4_ablation_cf.py` | PVR/TED/图稀疏度 | ✅ |
+| Table | Paper section | Content | Script | Metrics | Status |
+|---|---|---|---|---|---|
+| Table 1 | §4.5.1 (E1) | In-distribution benchmark (METR-LA/PEMS-BAY, H=12) | `01_code/tables/table1_in_distribution.py` | MAE/RMSE/MAPE | ✅ |
+| Table 2 | §4.5.2 (E2) | Event-stratified evaluation (S1–S4 + PDR) | `01_code/tables/table2_event_stratified.py` | MAE + PDR | ✅ |
+| Table 3 | §4.8 (Analysis I) | Forecasting ablations | `01_code/tables/table3_ablation_pred.py` | MAE/RMSE | ✅ |
+| Table 4 | §4.8 (Analysis II) | Counterfactual-validity ablations | `01_code/tables/table4_ablation_cf.py` | PVR/TED/graph sparsity | ✅ |
 
-**完整训练对表（基线 × 4 数据集，§4.4）**：
+**Full training comparison (baselines × four datasets, §4.4):**
 
 ```bash
 python -m 01_code.experiments.benchmark --datasets metr-la pems-bay pems04 q `
@@ -149,35 +147,37 @@ python -m 01_code.experiments.benchmark --datasets metr-la pems-bay pems04 q `
 
 ---
 
-## 基线模型（§4.4）
+## Baseline models (§4.4)
 
-| 基线 | 论文出处 | 文件 | 状态 |
-|------|----------|------|------|
+| Baseline | Publication | File | Status |
+|---|---|---|---|
 | GraphWaveNet | IJCAI 2019 | `01_code/baselines/graphwavenet.py` | ✅ |
 | D2STGNN | VLDB 2022 | `01_code/baselines/d2stgnn.py` | ✅ |
 | CaST | NeurIPS 2022 | `01_code/baselines/cast.py` | ✅ |
 | PDFormer | AAAI 2023 | `01_code/baselines/pdformer.py` | ✅ |
 | STAEformer | CIKM 2023 | `01_code/baselines/staeformer.py` | ✅ |
-| 公共工具 | — | `01_code/baselines/common.py`（`normalize_adj` `TemporalConv`） | ✅ |
-| 注册表 | — | `01_code/baselines/__init__.py`（`BASELINES` `build_baseline`） | ✅ |
+| Shared utilities | — | `01_code/baselines/common.py` (`normalize_adj`, `TemporalConv`) | ✅ |
+| Registry | — | `01_code/baselines/__init__.py` (`BASELINES`, `build_baseline`) | ✅ |
 
 ---
 
-## 一键跑通
+## End-to-end run
 
 ```bash
 python -m 01_code.run_01_code_pipeline --out out/01_code
 ```
 
-产物目录：
-- `out/01_code/scenarios/` — E3/E4/E5 CTM 反事实数据
-- `out/01_code/figures/` 或 `figures_real_q/` — Fig.1–8
-- `out/01_code/tables/` — Table 1–4
-- `out/01_code/benchmark/` — 基线对表实测结果
+Output directories:
+
+- `out/01_code/scenarios/` — E3/E4/E5 CTM counterfactual data
+- `out/01_code/figures/` or `figures_real_q/` — Fig. 1–8
+- `out/01_code/tables/` — Tables 1–4
+- `out/01_code/benchmark/` — Measured baseline comparison results
 
 ---
-## 当前正式实验与数据边界
 
-`01_code/formal/` 保存统一协议模型与标定、独立事件评估实现；`01_code/formal_workflows/` 保存参数搜索、测试、来源审计及数据输入契约。`04_results/formal_v3/` 中的 JSON 和图为阶段性实验记录。
+## Current formal experiments and data limitations
 
-本仓库未包含大型原始数据、训练权重和逐样本预测文件；这些文件保存在本地研究资料包。公开速度基准尚不能证明完整物理模型或真实干预效果。现有 METR-LA 五种子结果中，STCausalNet 预测适配版本的 MAE 高于 Graph WaveNet、D2STGNN 和 STAEformer。真实 Q 流量、独立密度、可核验事件和网络标定输入仍需补齐。更多限制见 `01_code/formal_workflows/05_真实证据与正式训练_v3.md`。
+`01_code/formal/` contains the unified-protocol model, calibration code, and independent-event evaluation code. `01_code/formal_workflows/` contains the hyperparameter search, testing, provenance audits, and input specifications. JSON files and figures in `04_results/formal_v3/` record interim results.
+
+The repository omits large raw datasets, model checkpoints, and per-sample prediction files; these remain in the local research archive. Public speed benchmarks alone cannot establish the superiority of the full physics model or real-world intervention effects. In the current five-seed METR-LA results, the forecasting adapter for STCausalNet has a higher MAE than Graph WaveNet, D2STGNN, and STAEformer. Measured Q-Traffic flow, independent density observations, verifiable events, and network-calibration inputs are still needed. See `01_code/formal_workflows/05_真实证据与正式训练_v3.md` for further limitations.
